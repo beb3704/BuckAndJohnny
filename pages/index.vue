@@ -12,6 +12,11 @@
 </template>
 
 <script setup>
+
+useHead({
+    title: "A Cool Title"
+});
+
 const state = useStaticAppState();
 
 </script>

@@ -16,6 +16,7 @@ link:[
     "./app.vue",
   ],
   theme: {
+    //When changing the font here, you also need to change it in the nuxt.config.ts
     fontFamily:{
       'sans': ['Josefin Sans', ...defaultTheme.fontFamily.sans],
     },
