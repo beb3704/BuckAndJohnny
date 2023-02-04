@@ -9,8 +9,16 @@ export default defineNuxtConfig({
         },
     },
     modules: [
-        '@nuxtjs/google-fonts'
+        '@nuxtjs/google-fonts',
+        '@kevinmarrec/nuxt-pwa'
     ],
+
+    pwa: {
+        workbox: {
+            enabled: true
+        }
+    },
+
     googleFonts: {
         //When changing the font here, you also need to change it in the tailwind.config.js
         families: {
@@ -24,5 +32,5 @@ export default defineNuxtConfig({
                 lang: 'en'
             }
         }
-    }
+    },
 })
