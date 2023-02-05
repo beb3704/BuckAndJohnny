@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen max-h-[90vh] relative">
+    <div class="h-screen relative">
         <!-- <div v-for="link in state.NavigationLinks" class="h-screen max-h-[90vh]">
             <div class="text-2xl">
                 {{ link.Name }}

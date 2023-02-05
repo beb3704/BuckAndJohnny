@@ -12,6 +12,6 @@ useSeoMeta({
     ogTitle: "A Good Title",
     description: "A dank page",
     ogDescription: "A dank Page",
-    ogImage: ''
+    ogImage: '/picture.jpg'
 });
 </script>
