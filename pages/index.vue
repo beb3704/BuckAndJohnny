@@ -8,17 +8,14 @@
                 {{ link.Route }}
             </div>
         </div>
-        {{ windowWidth }}
-        <video id="Video">
-            <source src="video.mp4" type="video/mp4">
+        <video id="Video" loop muted class="hidden lg:block">
+            <source src="/video.mp4" type="video/mp4">
         </video>
-        <img src="picture.jpg" />
+        <img src="/picture.jpg" />
     </div>
 </template>
 
 <script setup>
-const videoElement = ref()
-
 onMounted(() => {
     if (window.innerWidth >= 1024) {
         document.getElementById("Video").play();
