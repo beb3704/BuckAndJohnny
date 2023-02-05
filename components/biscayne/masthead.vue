@@ -1,28 +1,23 @@
 <template>
-    <div class="h-screen relative">
-        <!-- <div v-for="link in state.NavigationLinks" class="h-screen max-h-[90vh]">
-            <div class="text-2xl">
-                {{ link.Name }}
-            </div>
-            <div>
-                {{ link.Route }}
-            </div>
-        </div> -->
-
+    <div class="h-[90vh] lg:h-screen relative">
         <div class="z-40 relative grid grid-cols-2 w-full h-full grid-rows-3">
             <BiscayneNavigation class="p-4 justify-self-start self-start"></BiscayneNavigation>
             <BiscayneExternallinkbutton text="build & price a pool" url="https://google.com"
-                class="animate-bounce mt-5 mr-1 justify-self-end self-start">
+                class="animate-bounce mt-5 mr-1 justify-self-start lg:justify-self-end self-start lg:col-span-1 col-span-full">
             </BiscayneExternallinkbutton>
 
-            <NuxtImg format="webp" quality="60" height="200" src="/logo.png"
+            <NuxtImg format="webp" quality="60" height="200" width="200" src="/logo.png" alt="logo"
                 class="justify-self-center self-center col-span-full">
             </NuxtImg>
 
-            <div class="col-span-full justify-self-center self-end bg-primaryDark py-6 px-40">
-                <h1 class="text-primaryText text-6xl font-bold uppercase text-center tracking-widest">Swimming pool pros
+            <div class="col-span-full justify-self-center self-end bg-primaryDark py-3 px-10 lg:py-6 lg:px-30">
+                <h1
+                    class="text-primaryText text-2xl md:text-4xl lg:text-6xl font-bold uppercase text-center lg:tracking-widest">
+                    Swimming
+                    pool pros
                 </h1>
-                <h2 class="text-primaryText text-2xl uppercase text-center tracking-[.5em]">serving the gulf coast</h2>
+                <h2 class="text-primaryText lg:text-2xl uppercase text-center lg:tracking-[.5em]">serving the gulf coast
+                </h2>
             </div>
         </div>
 
