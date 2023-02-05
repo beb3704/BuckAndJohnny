@@ -6,7 +6,7 @@
                 class="animate-bounce mt-5 mr-1 justify-self-start lg:justify-self-end self-start lg:col-span-1 col-span-full">
             </BiscayneExternallinkbutton>
 
-            <NuxtImg format="webp" quality="60" height="200" width="200" src="/logo.png" alt="logo"
+            <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
                 class="justify-self-center self-center col-span-full">
             </NuxtImg>
 

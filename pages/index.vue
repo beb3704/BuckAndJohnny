@@ -3,11 +3,15 @@
         <BiscayneMasthead></BiscayneMasthead>
         <NuxtImg height="280" width="560" src="/lathamlogo.png" alt="Latham Brand Logo" class="m-auto" loading="lazy">
         </NuxtImg>
-        <div>
+        <div class="pt-10 pb-10">
             <MediaBackgroundimage alt="blue background" url="/bluebackground.png"></MediaBackgroundimage>
-            <h3 class="text-center pt-16 text-5xl uppercase text-primary">Family fun and relaxation</h3>
-            <h4 class="text-center text-xl uppercase tracking-widest mt-3">is just a few clicks away</h4>
-            <p class="text-justify max-w-5xl m-auto mt-10 text-lg leading-10">
+            <ElementH3 class="text-center">
+                Family fun and relaxation
+            </ElementH3>
+            <ElementH4 class="mt-2">
+                is just a few clicks away
+            </ElementH4>
+            <ElementP>
                 Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium. Suspendisse potenti. Morbi ut augue
                 id risus bibendum consequat. Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit amet
                 interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis ante. Maecenas interdum, diam at
@@ -15,15 +19,9 @@
                 Pellentesque ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris ornare quam sit amet
                 nunc hendrerit placerat. Vestibulum sit amet ligula molestie, auctor elit eu, maximus diam. Vivamus ut
                 lacus semper, consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus porta lacinia.
-            </p>
+            </ElementP>
             <BiscayneExternallinkbutton text="Get Started Now" url="https://google.com" class="m-auto mt-10">
             </BiscayneExternallinkbutton>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
         </div>
     </div>
 
