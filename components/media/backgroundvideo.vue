@@ -1,5 +1,5 @@
 <template>
-    <video id="Video" loop muted class="hidden absolute lg:block h-full w-full object-cover">
+    <video id="Video" loop muted class="hidden absolute lg:block h-full w-full object-cover top-0 left-0 object-center">
         <slot></slot>
     </video>
 </template>

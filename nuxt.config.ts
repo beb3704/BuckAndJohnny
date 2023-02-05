@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     googleFonts: {
         //When changing the font here, you also need to change it in the tailwind.config.js
         families: {
-            'Josefin Sans': [400, 700]
+            'Montserrat': [400, 700]
         }
     },
 
