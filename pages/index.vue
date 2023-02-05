@@ -1,29 +1,11 @@
 <template>
     <div>
-        <div v-for="link in state.NavigationLinks" class="h-screen max-h-[90vh]">
-            <div class="text-2xl">
-                {{ link.Name }}
-            </div>
-            <div>
-                {{ link.Route }}
-            </div>
-        </div>
-        <video id="Video" loop muted class="hidden lg:block">
-            <source src="/video.mp4" type="video/mp4">
-        </video>
-        <img src="/picture.jpg" />
+        <BiscayneMasthead></BiscayneMasthead>
     </div>
+
 </template>
 
 <script setup>
-onMounted(() => {
-    if (window.innerWidth >= 1024) {
-        document.getElementById("Video").play();
-    }
-
-})
-
-const state = useStaticAppState();
 
 useSeoMeta({
     title: "A Better title",

@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/google-fonts',
-        '@kevinmarrec/nuxt-pwa'
+        '@kevinmarrec/nuxt-pwa',
+        '@nuxt/image-edge'
     ],
 
     googleFonts: {
@@ -21,11 +22,12 @@ export default defineNuxtConfig({
     },
 
     typescript: { strict: true },
+
     app: {
         head: {
             htmlAttrs: {
                 lang: 'en'
             }
         }
-    },
+    }
 })
