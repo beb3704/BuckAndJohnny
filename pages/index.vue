@@ -1,7 +1,8 @@
 <template>
     <div>
         <BiscayneMasthead></BiscayneMasthead>
-        <NuxtImg height="300" src="/lathamlogo.png" class="m-auto"></NuxtImg>
+        <NuxtImg height="280" width="560" src="/lathamlogo.png" alt="Latham Brand Logo" class="m-auto" loading="lazy">
+        </NuxtImg>
         <div>
             <MediaBackgroundimage alt="blue background" url="/bluebackground.png"></MediaBackgroundimage>
             <h3 class="text-center pt-16 text-5xl uppercase text-primary">Family fun and relaxation</h3>
