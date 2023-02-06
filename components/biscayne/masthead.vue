@@ -7,7 +7,7 @@
             </BiscayneExternallinkbutton>
 
             <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
-                class="justify-self-center self-center col-span-full">
+                class="justify-self-center self-center col-span-full w-52 md:w-60 lg:w-80">
             </NuxtImg>
 
             <div class="col-span-full justify-self-center self-end bg-backgroundDark py-3 px-10 lg:py-6 lg:px-30">
