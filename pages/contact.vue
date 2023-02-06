@@ -106,6 +106,9 @@
         <iframe width="100%" height="450" frameborder="0" style="border: 0"
             :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyD10RbBi3cpHMtYcKvoosh3PDIqygnAzWI&q=${appConfig.contact.address.street},${appConfig.contact.address.city},${appConfig.contact.address.state}&attribution_source=Google+Maps+Embed+API`">
         </iframe>
+
+        <VueRecaptcha sitekey="6LdBiD0aAAAAABbNN4G57tXCDHu-lpIzklEP5ikh" ref="recaptcha" :loadRecaptchaScript="true"
+            @verify="verifyRecaptcha" @expired="expiredRecaptcha" />
     </section>
 
 
@@ -113,6 +116,7 @@
 
 <script  setup lang="ts">
 const appConfig = useAppConfig();
+const recaptcha = <any>ref(null);
 const data = reactive({
     submitting: false,
     submitted: false,
@@ -124,6 +128,14 @@ const data = reactive({
 })
 
 function submit() {
+    recaptcha.execute();
     data.submitted = true;
+}
+
+function verifyRecaptcha(response: any) {
+    alert(response)
+}
+
+function expiredRecaptcha() {
 }
 </script>
