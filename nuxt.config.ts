@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/google-fonts',
         '@kevinmarrec/nuxt-pwa',
-        '@nuxt/image-edge'
+        '@nuxt/image-edge',
+        'nuxt-delay-hydration',
     ],
 
     googleFonts: {
@@ -21,6 +22,8 @@ export default defineNuxtConfig({
             'Open Sans': [400, 700],
         }
     },
+
+    delayHydration: { mode: 'mount' },
 
     typescript: { strict: true },
 
