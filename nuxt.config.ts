@@ -14,7 +14,9 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
         'nuxt-delay-hydration',
     ],
-
+    image: {
+        domains: ['splashdownstorage.blob.core.windows.net']
+    },
     googleFonts: {
         //When changing the font here, you also need to change it in the tailwind.config.js
         families: {
