@@ -12,16 +12,29 @@ module.exports = {
 
   theme: {
     colors:{
-      'primary':'#253b51FF',
-      'primaryDark':'#0D2E38',
-      'primaryText':'#ffffff',
       'buttonColor':'#ffffff',
-      'buttonBackground': '#1573e5FF'
+      'buttonBackground': '#3769B3',
+      'accent':'#FBD551',
+
+      'mastheadTitle':'#fff',
+      'mastheadNavLinks':'#1B283C',
+
+      'textLight':'#fff',
+      'backgroundLight':'#202F46',
+      'backgroundDark':'#1B283C',
+
+      'titles':'#3769B3',
+      'subTitles':'#2988C9',
+      'bodyCopy':'#304555'
+
+
     },
 
     //When changing the font here, you also need to change it in the nuxt.config.ts
     fontFamily:{
-      'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
+      'primary':['Open Sans'],
+      // 'secondary':['Sassy Frass'],
+      'secondary':['Roboto'],
     },
     extend: {},
   },

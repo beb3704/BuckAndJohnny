@@ -1,7 +1,7 @@
 <template>
     <nav class="hidden lg:grid">
         <NuxtLink v-for="link in appConfig.navigationLinks" :to="link.url"
-            class="text-xl uppercase font-bold text-primary mb-2">
+            class="text-xl uppercase font-bold text-mastheadNavLinks mb-2 font-primary">
             {{ link.name }}</NuxtLink>
     </nav>
 </template>

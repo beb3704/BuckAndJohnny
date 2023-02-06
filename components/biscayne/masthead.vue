@@ -10,13 +10,15 @@
                 class="justify-self-center self-center col-span-full">
             </NuxtImg>
 
-            <div class="col-span-full justify-self-center self-end bg-primaryDark py-3 px-10 lg:py-6 lg:px-30">
+            <div class="col-span-full justify-self-center self-end bg-backgroundDark py-3 px-10 lg:py-6 lg:px-30">
                 <h1
-                    class="text-primaryText text-2xl md:text-4xl lg:text-6xl font-bold uppercase text-center lg:tracking-widest">
+                    class="text-mastheadTitle text-2xl md:text-4xl lg:text-6xl font-bold uppercase text-center lg:tracking-widest font-primary">
                     Swimming
                     pool pros
                 </h1>
-                <h2 class="text-primaryText lg:text-2xl uppercase text-center lg:tracking-[.5em]">serving the gulf coast
+                <h2 class="text-mastheadTitle lg:text-2xl uppercase text-center lg:tracking-[.5em] font-primary">serving
+                    the gulf
+                    coast
                 </h2>
             </div>
         </div>

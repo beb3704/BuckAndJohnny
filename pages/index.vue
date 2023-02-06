@@ -3,12 +3,16 @@
         <BiscayneMasthead></BiscayneMasthead>
         <NuxtImg height="280" width="560" src="/lathamlogo.png" alt="Latham Brand Logo" class="m-auto" loading="lazy">
         </NuxtImg>
+
+
+
+
         <div class="pt-10 pb-10">
             <MediaBackgroundimage alt="blue background" url="/bluebackground.png"></MediaBackgroundimage>
             <ElementH3 class="text-center">
                 Family fun and relaxation
             </ElementH3>
-            <ElementH4 class="mt-2">
+            <ElementH4 class="text-center mt-2">
                 is just a few clicks away
             </ElementH4>
             <ElementP>
@@ -23,6 +27,7 @@
             <BiscayneExternallinkbutton text="Get Started Now" url="https://google.com" class="m-auto mt-10">
             </BiscayneExternallinkbutton>
         </div>
+
     </div>
 
 </template>
