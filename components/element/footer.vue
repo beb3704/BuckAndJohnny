@@ -1,13 +1,13 @@
 <template>
-    <footer class="bg-backgroundLight p-3 grid grid-cols-2 gap-5 lg:grid-cols-[1fr_1fr_2fr_2fr]">
-        <nav class="grid">
+    <footer class="bg-backgroundLight grid grid-cols-2 gap-5 lg:grid-cols-[1fr_1fr_2fr_2fr]">
+        <nav class="grid p-3">
             <div class="text-accent uppercase mb-1 ">Navigation</div>
             <NuxtLink v-for="link in appConfig.navigationLinks" :to="link.url"
                 class="text-base uppercase text-textLight mb-1 ml-3 ">
                 {{ link.name }}</NuxtLink>
         </nav>
 
-        <div>
+        <div class="p-3">
             <div class="text-accent uppercase mb-1 ">Call us!</div>
             <a :href="`tel:${appConfig.contact.phone}`" class="uppercase block mb-2  text-textLight">{{
                 appConfig.contact.phone.replaceAll('-', '.')
@@ -27,26 +27,30 @@
             <NuxtLink class=" text-textLight" to="/privacypolicy">Privacy Policy</NuxtLink>
         </div>
 
-        <div class="col-span-full lg:col-span-1">
+        <div class="col-span-full lg:col-span-1 p-3">
             <div class="text-accent uppercase mb-1 ">Latest posts</div>
             <ul class=" text-textLight">
                 <li v-for="blog in latestBlogs"
                     class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent uppercase text-sm">
-                    <p class="block pl-3">{{ blog.title }}</p>
+                    <p class="block pl-3 py-1">{{ blog.title }}</p>
                 </li>
             </ul>
         </div>
 
-        <div class="col-span-full lg:col-span-1">
+        <div class="col-span-full lg:col-span-1 p-3">
             <div class=" text-accent uppercase mb-1 ">Latest tags</div>
             <ul class=" text-textLight">
                 <li v-for="tag in topTags"
                     class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent text-sm uppercase">
-                    <p class="block pl-3">{{ tag }}</p>
+                    <p class="block pl-3 py-1">{{ tag }}</p>
                 </li>
             </ul>
         </div>
-
+        <a href="https://www.deepdiveco.com" class="flex justify-between w-full col-span-full">
+            <NuxtImg src="/footer/splashdownfooter.svg" alt="company icon" class="h-12 md:h-14"></NuxtImg>
+            <NuxtImg src="/footer/deepdivefooter.svg" alt="company icon" class="h-12 md:h-14 justify-self-end">
+            </NuxtImg>
+        </a>
     </footer>
 </template>
 
