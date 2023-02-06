@@ -6,17 +6,19 @@
     position: relative;
 }
 
-/* .page-enter-active,
-.page-leave-active {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-duration: 500ms;
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.4s;
 }
 
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-} */
+.fade-enter,
+.fade-leave-to
+
+  {
+    opacity: 0;
+    filter: blur(1rem);
+}
 
 .page-enter-active,
 .page-leave-active {

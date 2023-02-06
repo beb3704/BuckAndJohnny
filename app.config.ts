@@ -8,7 +8,7 @@ export default defineAppConfig({
             state: "LA"
         }
     },
-    licenseKey: "c7a5a12f-f700-45a2-a7ff-89264176eaa3",
+    licenseKey: "e3de63e4-dda4-40fe-bcc8-d62dcbae121f",
     navigationLinks: [
         {
             name: "Home",

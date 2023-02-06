@@ -4,4 +4,5 @@ export interface Blog {
     excerpt: string;
     body: string;
     seoSlug: string;
+    tags: string;
 }

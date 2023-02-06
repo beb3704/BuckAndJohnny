@@ -32,7 +32,7 @@
             <ul class=" text-textLight">
                 <li v-for="blog in latestBlogs"
                     class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent uppercase text-sm">
-                    <p class="block pl-3 py-1">{{ blog.title }}</p>
+                    <NuxtLink :to="`/blog/${blog.seoSlug}`" class="block pl-3 py-1">{{ blog.title }}</NuxtLink>
                 </li>
             </ul>
         </div>
@@ -42,7 +42,7 @@
             <ul class=" text-textLight">
                 <li v-for="tag in topTags"
                     class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent text-sm uppercase">
-                    <p class="block pl-3 py-1">{{ tag }}</p>
+                    <NuxtLink :to="`/blog/tag/${tag}`" class="block pl-3 py-1">{{ tag }}</NuxtLink>
                 </li>
             </ul>
         </div>
