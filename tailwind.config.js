@@ -18,6 +18,7 @@ module.exports = {
 
       'mastheadTitle':'#fff',
       'mastheadNavLinks':'#1B283C',
+      'subHeaderTitle':'#1B283C',
 
       'textLight':'#fff',
       'backgroundLight':'#202F46',

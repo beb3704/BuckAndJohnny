@@ -24,7 +24,7 @@ export default defineAppConfig({
         },
         {
             name: "Contact",
-            url: "/"
+            url: "/contact"
         },
         {
             name: "Blog",

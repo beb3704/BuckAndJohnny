@@ -25,10 +25,11 @@
 
 
         <MediaBackgroundvideo class="z-10">
-            <source src="/video.mp4" type="video/mp4">
+            <source src="/masthead/video.mp4" type="video/mp4">
         </MediaBackgroundvideo>
-        <MediaBackgroundimage url="/background.jpg" alt="background tree" class="z-0"></MediaBackgroundimage>
-        <MediaBackgroundimage url="/backgroundoverlay.png" alt="background tree" class="z-30"></MediaBackgroundimage>
+        <MediaBackgroundimage url="/masthead/background.jpg" alt="background tree" class="z-0"></MediaBackgroundimage>
+        <MediaBackgroundimage url="/masthead/backgroundoverlay.png" alt="background tree" class="z-30">
+        </MediaBackgroundimage>
     </div>
 </template>
 

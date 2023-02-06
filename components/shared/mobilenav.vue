@@ -1,33 +1,32 @@
 <template>
-  <div id="top-head-inner">
+  <div id="top-head-inner" class="lg:hidden">
     <div id="nav-toggle" v-on:click="openMobileNav">
       <div>
-        <span class="bg-backgroundDark"></span>
-        <span class="bg-backgroundDark"></span>
-        <span class="bg-backgroundDark"></span>
+        <span class="bg-buttonBackground"></span>
+        <span class="bg-buttonBackground"></span>
+        <span class="bg-buttonBackground"></span>
       </div>
     </div>
-    <nav id="global-nav">
-      <div>
-        <h5>
-          <div class="h-6"></div>
-          CALL US
-          <br />
+    <nav id="global-nav" class="grid">
 
-          <a :href="`tel:${appConfig.contact.phone}`" class="uppercase block mb-2  text-textLight">{{
-            appConfig.contact.phone.replaceAll('-', '.')
-          }}
-          </a>
+      <a :href="`tel:${appConfig.contact.phone}`" class="uppercase block mb-2  text-textLight">
+        <h5 class="bg-backgroundDark block p-10">
+          <div class="font-bold text-textLight text-3xl">
+            CALL US
+          </div>
+          {{ appConfig.contact.phone.replaceAll('-', '.') }}
         </h5>
+      </a>
+      <div class="">
+        <ul>
+          <li>
+            <NuxtLink v-for=" link in appConfig.navigationLinks" :to="link.url" v-on:click.native="openMobileNav"
+              class="text-2xl uppercase text-textLight mb-8 ml-3 text-center block">
+              {{ link.name }}</NuxtLink>
+          </li>
+        </ul>
       </div>
 
-      <ul>
-        <li>
-          <NuxtLink v-for="link in appConfig.navigationLinks" :to="link.url"
-            class="text-base uppercase text-textLight mb-1 ml-3 ">
-            {{ link.name }}</NuxtLink>
-        </li>
-      </ul>
     </nav>
     <div id="nav-bg"></div>
   </div>
@@ -85,43 +84,21 @@ export default {
 #global-nav {
   visibility: hidden;
   position: fixed;
-  display: table;
   vertical-align: middle;
   top: 0;
   height: 100%;
   width: 100%;
   text-align: center;
-  font-size: 16px;
   z-index: 1001;
   overflow: hidden;
 }
 
-#global-nav ul {
-  display: table-cell;
-  vertical-align: middle;
-  list-style: none;
-  padding: 50px 10px 20px 10px;
-}
-
-#global-nav a {
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
-}
 
 /* ***********************************************************
 * nav-list
 * *********************************************************** */
 
-#global-nav h4 {
-  text-align: center;
-  font-size: 13px;
-  padding-top: 20px;
-  padding-bottom: 7px;
-  display: block;
-  margin: auto;
-  font-weight: 800;
-}
+
 
 .MobilePhones {
   position: absolute;
@@ -142,20 +119,8 @@ export default {
   }
 }
 
-#global-nav h5 {
-  text-align: center;
-  font-size: 18px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 100%;
-  font-weight: 600;
-  margin: 0px 0px 0px 0px;
-  border-bottom: 1px solid #011819;
-}
 
-#global-nav h5 span {
-  color: #fff;
-}
+
 
 #global-nav ul li {
   opacity: 0;
@@ -255,7 +220,7 @@ export default {
   transform: scale(80);
   -webkit-transition: all 0.6s ease-out;
   transition: all 1s ease-out;
-  background-color: rgba(1, 28, 34, 0.9);
+  @apply bg-backgroundLight
 }
 
 /* ***********************************************************
@@ -267,7 +232,7 @@ export default {
   right: 0;
   top: 0;
   bottom: 10px;
-  width: 60px;
+  width: 80px;
   height: 60px;
   cursor: pointer;
   padding: 15px;
@@ -283,10 +248,8 @@ export default {
 }
 
 #nav-toggle span {
-  /*   display: block; */
   height: 2px;
   width: 100%;
-  /*   left: 0; */
   zoom: 1;
   -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;

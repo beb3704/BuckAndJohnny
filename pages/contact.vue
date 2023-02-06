@@ -1,3 +1,6 @@
 <template>
-    <div>contact page</div>
+    <div class="">
+        <BiscayneSubhead title="Contact"></BiscayneSubhead>
+        <div>contact page</div>
+    </div>
 </template>
