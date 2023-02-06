@@ -17,14 +17,13 @@ import { Blog } from '~~/models/blog';
 const route = useRoute();
 const { data: blog } = await useFetch<Blog>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}/blog/${route.params.slug}`)
 
-
-// this.$config.baseUrl +
-//         "blogs/" +
-//         this.$config.licenseKey +
-//         "/blog/" +
-//         this.$route.params.slug.toUpperCase(),
-
-
+useSeoMeta({
+    title: blog.value?.title,
+    ogTitle: blog.value?.title,
+    description: blog.value?.excerpt,
+    ogDescription: blog.value?.excerpt,
+    ogImage: blog.value?.imageUrl
+});
 </script>
 
 <style>
@@ -32,10 +31,10 @@ h3,
 h1,
 h2,
 h4 {
-    @apply font-secondary text-textLight font-bold
+    @apply text-textLight font-bold
 }
 
 * {
-    @apply font-secondary text-textLight
+    @apply text-textLight
 }
 </style>

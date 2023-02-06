@@ -3,10 +3,10 @@
         <NuxtLink v-for="blog in blogs" class="shadow bg-backgroundLight rounded" :to="`blog/${blog.seoSlug}`">
             <NuxtImg :src="blog.imageUrl" format="webp" width="400px" height="250px" sizes="sm:400px" quality="70"
                 class="object-cover w-full rounded-t" loading="lazy" alt="blog image"></NuxtImg>
-            <div class="p-4 font-secondary font-bold text-textLight">
+            <div class="p-4  font-bold text-textLight">
                 {{ blog.title }}
             </div>
-            <div class="px-4 pb-8 font-secondary text-justify text-textLight text-sm">
+            <div class="px-4 pb-8  text-justify text-textLight text-sm">
                 {{ blog.excerpt }}
             </div>
         </NuxtLink>
@@ -16,10 +16,10 @@
 <script setup lang="ts">import { Blog } from '~~/models/blog';
 
 useSeoMeta({
-    title: "A Better title",
-    ogTitle: "A Good Title",
-    description: "A dank page",
-    ogDescription: "A dank Page",
+    title: "Blogs",
+    ogTitle: "Blogs",
+    description: "All Blogs",
+    ogDescription: "All Blogs",
     ogImage: '/logo.png'
 });
 

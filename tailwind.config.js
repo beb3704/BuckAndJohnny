@@ -33,8 +33,7 @@ module.exports = {
     //When changing the font here, you also need to change it in the nuxt.config.ts
     fontFamily:{
       'primary':['Open Sans'],
-      // 'secondary':['Sassy Frass'],
-      'secondary':['Roboto'],
+      'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },

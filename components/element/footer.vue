@@ -1,35 +1,35 @@
 <template>
     <footer class="bg-backgroundLight p-3 grid grid-cols-2 gap-5 lg:grid-cols-[1fr_1fr_2fr_2fr]">
         <nav class="grid">
-            <div class="text-accent uppercase mb-1 font-secondary">Navigation</div>
+            <div class="text-accent uppercase mb-1 ">Navigation</div>
             <NuxtLink v-for="link in appConfig.navigationLinks" :to="link.url"
-                class="text-base uppercase text-textLight mb-1 ml-3 font-secondary">
+                class="text-base uppercase text-textLight mb-1 ml-3 ">
                 {{ link.name }}</NuxtLink>
         </nav>
 
         <div>
-            <div class="text-accent uppercase mb-1 font-secondary">Call us!</div>
-            <a :href="`tel:${appConfig.contact.phone}`" class="uppercase block mb-2 font-secondary text-textLight">{{
+            <div class="text-accent uppercase mb-1 ">Call us!</div>
+            <a :href="`tel:${appConfig.contact.phone}`" class="uppercase block mb-2  text-textLight">{{
                 appConfig.contact.phone.replaceAll('-', '.')
             }}
             </a>
-            <div class="text-accent uppercase mb-1 font-secondary">Address</div>
-            <a class="uppercase mb-2 font-secondary  block text-textLight"
+            <div class="text-accent uppercase mb-1 ">Address</div>
+            <a class="uppercase mb-2   block text-textLight"
                 :href="`http://maps.google.com/?q=${appConfig.contact.address.street},${appConfig.contact.address.city},${appConfig.contact.address.state},${appConfig.contact.address.zip}`">
-                <div class="font-secondary text-textLight">
+                <div class=" text-textLight">
                     {{ appConfig.contact.address.street }}
                 </div>
-                <div class="font-secondary text-textLight">
+                <div class=" text-textLight">
                     {{ appConfig.contact.address.city }},{{ appConfig.contact.address.state }}
                 </div>
             </a>
-            <div class="text-accent uppercase mb-1 font-secondary">Policies</div>
-            <NuxtLink class="font-secondary text-textLight" to="/privacypolicy">Privacy Policy</NuxtLink>
+            <div class="text-accent uppercase mb-1 ">Policies</div>
+            <NuxtLink class=" text-textLight" to="/privacypolicy">Privacy Policy</NuxtLink>
         </div>
 
         <div class="col-span-full lg:col-span-1">
-            <div class="text-accent uppercase mb-1 font-secondary">Latest posts</div>
-            <ul class="font-secondary text-textLight">
+            <div class="text-accent uppercase mb-1 ">Latest posts</div>
+            <ul class=" text-textLight">
                 <li v-for="blog in latestBlogs"
                     class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent uppercase text-sm">
                     <p class="block pl-3">{{ blog.title }}</p>
@@ -38,8 +38,8 @@
         </div>
 
         <div class="col-span-full lg:col-span-1">
-            <div class=" text-accent uppercase mb-1 font-secondary">Latest tags</div>
-            <ul class="font-secondary text-textLight">
+            <div class=" text-accent uppercase mb-1 ">Latest tags</div>
+            <ul class=" text-textLight">
                 <li v-for="tag in topTags"
                     class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent text-sm uppercase">
                     <p class="block pl-3">{{ tag }}</p>
