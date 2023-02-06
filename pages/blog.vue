@@ -1,8 +1,15 @@
 <template>
-    <div class="grid max-w-7xl">
-        <div v-for="blog in blogs">
-            <NuxtImg :src="blog.imageUrl" sizes="sm:400px" quality="70" class="object-cover" loading="lazy"></NuxtImg>
-        </div>
+    <div class="grid max-w-7xl gap-10 justify-center sm:grid-cols-2 lg:grid-cols-3 p-5 m-auto">
+        <NuxtLink v-for="blog in blogs" class="shadow bg-backgroundLight rounded" :to="`blog/${blog.seoSlug}`">
+            <NuxtImg :src="blog.imageUrl" format="webp" width="400px" height="250px" sizes="sm:400px" quality="70"
+                class="object-cover w-full rounded-t" loading="lazy"></NuxtImg>
+            <div class="p-4 font-secondary font-bold text-textLight">
+                {{ blog.title }}
+            </div>
+            <div class="px-4 pb-8 font-secondary text-justify text-textLight text-sm">
+                {{ blog.excerpt }}
+            </div>
+        </NuxtLink>
     </div>
 </template>
 s
