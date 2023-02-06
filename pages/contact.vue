@@ -1,5 +1,6 @@
 <template>
     <section class="">
+
         <BiscayneSubhead title="Contact"></BiscayneSubhead>
         <div class="max-w-6xl m-auto lg:p-20 py-4">
             <div class="grid lg:grid-cols-[1fr_2fr]">
@@ -107,17 +108,27 @@
             :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyD10RbBi3cpHMtYcKvoosh3PDIqygnAzWI&q=${appConfig.contact.address.street},${appConfig.contact.address.city},${appConfig.contact.address.state}&attribution_source=Google+Maps+Embed+API`">
         </iframe>
 
-        <VueRecaptcha sitekey="6LdBiD0aAAAAABbNN4G57tXCDHu-lpIzklEP5ikh" ref="recaptcha" :loadRecaptchaScript="true"
-            @verify="verifyRecaptcha" @expired="expiredRecaptcha" />
+
     </section>
 
 
 </template>
-
 <script  setup lang="ts">
+import { VueReCaptcha, useReCaptcha } from 'vue-recaptcha-v3';
+
+const { vueApp } = useNuxtApp();
+vueApp.use(VueReCaptcha, {
+    siteKey: '6LdBiD0aAAAAABbNN4G57tXCDHu-lpIzklEP5ikh',
+    loaderOptions: {
+        autoHideBadge: true,
+    },
+});
+
+let recaptcha = {} as any;
+
 const appConfig = useAppConfig();
-const recaptcha = <any>ref(null);
 const data = reactive({
+    recaptcha: {},
     submitting: false,
     submitted: false,
     name: "",
@@ -127,15 +138,39 @@ const data = reactive({
     location: "",
 })
 
-function submit() {
-    recaptcha.execute();
+async function submit() {
+    let componentToken = await recaptcha?.executeRecaptcha('login');
+    let postObject = {
+        formName: "Quick Contact",
+        name: data.name,
+        reCaptchaKey: componentToken,
+        dictionary: {
+            Name: data.name,
+            Email: data.email,
+            Message: data.message,
+            Phone: data.phone,
+            Location: data.location,
+        },
+        licenseKey: appConfig.licenseKey,
+    };
+
+    const response = await useFetch(`https://splashdownadminportal.azurewebsites.net/contactform`, {
+        method: "POST",
+        body: postObject,
+        headers: {
+            "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+            "Access-Control-Allow-Origin": "*",
+            'Access-Control-Allow-Credentials': 'true',
+            "Access-Control-Allow-Headers": '*',
+            "Access-Control-Expose-Headers": '*'
+        }
+    })
+
     data.submitted = true;
 }
 
-function verifyRecaptcha(response: any) {
-    alert(response)
-}
-
-function expiredRecaptcha() {
-}
+onMounted(async () => {
+    recaptcha = useReCaptcha();
+    await recaptcha?.recaptchaLoaded();
+})
 </script>
