@@ -9,9 +9,12 @@
             class="animate-bounce pt-5 mr-1 justify-self-start lg:justify-self-end self-start lg:col-span-1 col-span-full z-40 lg:self-end">
         </BiscayneExternallinkbutton>
 
-        <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
-            class="justify-self-center self-center col-span-full w-44 md:w-52 lg:w-64 h-auto lg:justify-self-start lg:row-start-1">
-        </NuxtImg>
+        <NuxtLink to="/"
+            class="justify-self-center self-center col-span-full block lg:justify-self-start lg:row-start-1">
+            <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
+                class="w-44 md:w-52 lg:w-64 h-auto">
+            </NuxtImg>
+        </NuxtLink>
 
         <ElementH1
             class="text-center m-4 self-center col-span-full lg:col-span-1 lg:justify-self-start lg:row-start-2 lg:mt-20">
