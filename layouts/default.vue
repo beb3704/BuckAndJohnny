@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="">
         <SharedMobilenav></SharedMobilenav>
         <slot />
         <ElementFooter></ElementFooter>
