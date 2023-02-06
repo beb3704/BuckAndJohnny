@@ -26,7 +26,6 @@ export default defineNuxtConfig({
     },
 
     delayHydration: { mode: 'mount' },
-
     typescript: { strict: true },
 
     app: {
