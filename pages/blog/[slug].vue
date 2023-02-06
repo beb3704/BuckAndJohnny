@@ -5,8 +5,8 @@
             sizes="sm:100vw md:100vw lg:50vw" quality="70" class="object-cover m-auto w-full h-60 md:h-72 lg:h-96"
             alt="blog image">
         </NuxtImg>
-        <h1 class="bg-backgroundLight p-4 text-2xl">{{ blog?.title }}</h1>
-        <div v-if="blog" v-html="blog.body" class="bg-backgroundLight p-4">
+        <h1 class="bg-backgroundLight p-6 text-2xl">{{ blog?.title }}</h1>
+        <div v-if="blog" v-html="blog.body" class="bg-backgroundLight p-6">
 
         </div>
     </div>
