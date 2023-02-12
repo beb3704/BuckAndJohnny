@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .animation-delay-0{
+    animation-delay: 0;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-500{
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-1000{
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-2000{
+    animation-delay: 2000ms;
+    animation-fill-mode: backwards;
+  }
+ 
+}
+
 *{
     position: relative;
 }

@@ -38,7 +38,18 @@ module.exports = {
       'primary':['Open Sans'],
       'sans': ['Lato', ...defaultTheme.fontFamily.sans],
     },
-    extend: {},
+    extend: {
+      animation:{
+        fadeIn: 'fadeIn 4s ease-in-out',
+      },
+      
+      keyframes: theme => ({
+        fadeIn:{
+          '0%':{opacity:0},
+          '100%':{opacity:1}
+        }
+      })
+    },
   },
   plugins: []
 }

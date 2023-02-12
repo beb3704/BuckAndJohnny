@@ -1,19 +1,30 @@
 <template>
-    <swiper-container slides-per-view="auto" autoplay-delay="3000"
-        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+    <Swiper :autoplay="{ delay: 3000 }" :modules="[SwiperAutoplay]" :slides-per-view="data.width" class="">
 
-        <swiper-slide v-for="href in slides" class="grid justify-center">
-            <NuxtImg format="webp" quality="70" class="object-cover w-full h-full" :src="href">
-            </NuxtImg>
-        </swiper-slide>
+        <SwiperSlide v-for="href in slides">
+            <div class="w-full h-full grid justify-center">
+                <NuxtImg format="webp" quality="70" sizes="sm:150px md:250px lg:350px" :src="href"
+                    class="object-cover h-full w-full" alt="Various manufacturer logos"></NuxtImg>
+            </div>
+        </SwiperSlide>
 
-    </swiper-container>
+    </Swiper>
 </template>
 
 <script  setup lang="ts">
 import { PropType } from 'vue';
 
+let data = reactive({
+    width: 2
+})
 
+onMounted(() => {
+    if (window.innerWidth >= 1024) {
+        data.width = 5;
+    } else if (window.innerWidth >= 768) {
+        data.width = 3;
+    }
+})
 
 const props = defineProps({
     slides: { type: Array as PropType<Array<string>>, required: true },

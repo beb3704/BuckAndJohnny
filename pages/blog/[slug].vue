@@ -1,13 +1,13 @@
 <template>
-    <div>
+    <div class="bg-[#EDEDED]">
         <BiscayneSubhead title="Blogs"></BiscayneSubhead>
         <div class="lg:p-10 max-w-5xl m-auto">
             <NuxtImg v-if="blog" :src="blog.imageUrl" width="700" height="400" format="webp"
                 sizes="sm:100vw md:100vw lg:50vw" quality="70" class="object-cover m-auto w-full h-60 md:h-72 lg:h-96"
                 alt="blog image">
             </NuxtImg>
-            <h1 class="bg-backgroundLight p-6 text-2xl">{{ blog?.title }}</h1>
-            <div v-if="blog" v-html="blog.body" class="bg-backgroundLight p-6">
+            <h1 class=" p-6 text-2xl bg-[#fff] text-titles">{{ blog?.title }}</h1>
+            <div v-if="blog" v-html="blog.body" class="bg-[#fff] text-bodyCopy p-6">
 
             </div>
         </div>
@@ -29,15 +29,15 @@ useSeoMeta({
 });
 </script>
 
-<style>
+<style scoped>
 h3,
 h1,
 h2,
 h4 {
-    @apply text-textLight font-bold
+    @apply text-titles font-bold
 }
 
 * {
-    @apply text-textLight
+    @apply text-bodyCopy
 }
 </style>
