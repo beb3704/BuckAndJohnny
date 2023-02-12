@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
     pages: true,
-
     postcss: {
         plugins: {
             tailwindcss: {},
@@ -14,6 +13,7 @@ export default defineNuxtConfig({
         '@kevinmarrec/nuxt-pwa',
         '@nuxt/image-edge',
         'nuxt-delay-hydration',
+        'nuxt-swiper'
     ],
     image: {
         domains: ['splashdownstorage.blob.core.windows.net']

@@ -1,17 +1,18 @@
 <template>
-    <swiper-container slides-per-view="auto" autoplay-delay="3000"
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-        <swiper-slide class="grid justify-center" v-for="href in slides">
-            <NuxtImg format="webp" quality="100" sizes="sm:150px md:250px lg:350px" :src="$img(href)"></NuxtImg>
-        </swiper-slide>
-    </swiper-container>
+    <Swiper :autoplay="{ delay: 3000 }" :modules="[SwiperAutoplay]" :slides-per-view="5" class="">
+
+        <SwiperSlide class="grid justify-center" v-for="href in slides">
+            <NuxtImg format="webp" quality="100" sizes="sm:150px md:250px lg:350px" :src="href"
+                alt="Various manufacturer logos"></NuxtImg>
+        </SwiperSlide>
+
+    </Swiper>
 </template>
 
 
 
 <script  setup lang="ts">
-import { register } from 'swiper/element/bundle';
-register();
+
 
 let slides = [
     'https://splashdownstorage.blob.core.windows.net/logos/alaglas.png',

@@ -1,12 +1,12 @@
 <template>
     <section>
         <BiscayneSubhead title="Components"></BiscayneSubhead>
-
+        <!-- 
         <MediaImagecarousel :slides="([
             'https://splashdownstorage.blob.core.windows.net/splashdown/86c7c2db-a269-4c09-a072-e18104bc579a/1178f029-2895-424e-98a9-a2b133bc1794-pool-content-34.jpg',
             'https://splashdownstorage.blob.core.windows.net/splashdown/86c7c2db-a269-4c09-a072-e18104bc579a/bd79fc33-9bc5-4eec-9728-bfc60fe2b761-pool-content-46.jpg', 'https://splashdownstorage.blob.core.windows.net/splashdown/86c7c2db-a269-4c09-a072-e18104bc579a/bd79fc33-9bc5-4eec-9728-bfc60fe2b761-pool-content-46.jpg'
             , 'https://splashdownstorage.blob.core.windows.net/splashdown/86c7c2db-a269-4c09-a072-e18104bc579a/bd79fc33-9bc5-4eec-9728-bfc60fe2b761-pool-content-46.jpg', 'https://splashdownstorage.blob.core.windows.net/splashdown/86c7c2db-a269-4c09-a072-e18104bc579a/bd79fc33-9bc5-4eec-9728-bfc60fe2b761-pool-content-46.jpg'
-        ])"></MediaImagecarousel>
+        ])"></MediaImagecarousel> -->
 
         <MediaLogocarousel></MediaLogocarousel>
 
