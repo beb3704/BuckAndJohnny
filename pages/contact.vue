@@ -93,7 +93,6 @@
                                 <a href="https://policies.google.com/terms">Terms of Service</a>
                                 apply.
                             </small>
-                            <loader v-show="data.submitting" />
                         </div>
                         <div key="2" class="px-5 flex-grow flex justify-center items-center text-2xl py-16" v-else>
                             <div class="text-bodyCopy">
