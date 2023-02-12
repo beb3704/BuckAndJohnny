@@ -1,9 +1,11 @@
 <template>
-    <Swiper :autoplay="{ delay: 3000 }" :modules="[SwiperAutoplay]" :slides-per-view="5" class="">
+    <Swiper :autoplay="{ delay: 3000 }" :modules="[SwiperAutoplay]" :slides-per-view="data.width" class="">
 
-        <SwiperSlide class="grid justify-center" v-for="href in slides">
-            <NuxtImg format="webp" quality="100" sizes="sm:150px md:250px lg:350px" :src="href"
-                alt="Various manufacturer logos"></NuxtImg>
+        <SwiperSlide v-for="href in slides">
+            <div class="w-full h-full grid justify-center">
+                <NuxtImg format="webp" quality="100" sizes="sm:150px md:250px lg:350px" :src="href"
+                    alt="Various manufacturer logos"></NuxtImg>
+            </div>
         </SwiperSlide>
 
     </Swiper>
@@ -13,6 +15,17 @@
 
 <script  setup lang="ts">
 
+let data = reactive({
+    width: 2
+})
+
+onMounted(() => {
+    if (window.innerWidth >= 1024) {
+        data.width = 5;
+    } else if (window.innerWidth >= 768) {
+        data.width = 3;
+    }
+})
 
 let slides = [
     'https://splashdownstorage.blob.core.windows.net/logos/alaglas.png',
