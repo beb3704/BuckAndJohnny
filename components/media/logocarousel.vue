@@ -3,7 +3,7 @@
 
         <SwiperSlide v-for="href in slides">
             <div class="w-full h-full grid justify-center">
-                <NuxtImg format="webp" quality="70" sizes="sm:150px md:250px lg:350px" :src="href"
+                <NuxtImg format="webp" quality="70" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" :src="href"
                     alt="Various manufacturer logos"></NuxtImg>
             </div>
         </SwiperSlide>
