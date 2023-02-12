@@ -1,7 +1,8 @@
 <template>
     <section class="">
 
-        <BiscayneSubhead title="Contact"></BiscayneSubhead>
+        <MarlinSubhead title="Contact">
+        </MarlinSubhead>
         <div class="max-w-6xl m-auto lg:p-20 py-4">
             <div class="grid lg:grid-cols-[1fr_2fr]">
                 <div class="lg:mr-10 shadow-lg text-center grid grid-rows-[min-content_2fr]">
@@ -115,6 +116,16 @@
 </template>
 <script  setup lang="ts">
 import { VueReCaptcha, useReCaptcha } from 'vue-recaptcha-v3';
+
+
+useSeoMeta({
+    title: "Contact",
+    ogTitle: "Contact",
+    description: "Quick Contact Page",
+    ogDescription: "Quick Contact Page",
+    ogImage: '/logo.png'
+});
+
 
 const { vueApp } = useNuxtApp();
 vueApp.use(VueReCaptcha, {

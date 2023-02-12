@@ -1,5 +1,8 @@
 <template>
     <footer class="bg-backgroundLight grid grid-cols-2 gap-5 lg:grid-cols-[1fr_1fr_2fr_2fr]">
+        <SharedModal v-model:show="showModal">
+            <SharedPrivacypolicy></SharedPrivacypolicy>
+        </SharedModal>
         <nav class="grid p-3">
             <div class="text-accent uppercase mb-1 ">Navigation</div>
             <NuxtLink v-for="link in appConfig.navigationLinks" :to="link.url"
@@ -24,7 +27,8 @@
                 </div>
             </a>
             <div class="text-accent uppercase mb-1 ">Policies</div>
-            <NuxtLink class=" text-textLight" to="/privacypolicy">Privacy Policy</NuxtLink>
+            <a href="#" v-on:click="showModal = !showModal" class=" text-textLight" to="/privacypolicy">Privacy
+                Policy</a>
         </div>
 
         <div class="col-span-full lg:col-span-1 p-3">
@@ -47,15 +51,17 @@
             </ul>
         </div>
         <a href="https://www.deepdiveco.com" class="flex justify-between w-full col-span-full">
-            <NuxtImg src="/footer/splashdownfooter.svg" alt="company icon" class="h-12 md:h-14"></NuxtImg>
-            <NuxtImg src="/footer/deepdivefooter.svg" alt="company icon" class="h-12 md:h-14 justify-self-end">
+            <NuxtImg src="/footer/splashdownfooter.svg" alt="company icon" class="h-10 md:h-14"></NuxtImg>
+            <NuxtImg src="/footer/deepdivefooter.svg" alt="company icon" class="h-10 md:h-14 justify-self-end">
             </NuxtImg>
         </a>
     </footer>
 </template>
 
-<script setup lang="ts">import { Blog } from '~~/models/blog';
+<script setup lang="ts">
+import { Blog } from '~~/models/blog';
 
+const showModal = ref(false);
 const appConfig = useAppConfig()
 const { data: latestBlogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}/latestblogs`)
 const { data: topTags } = await useFetch<Array<string>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}/toptags`)

@@ -1,3 +1,5 @@
+import { ButtonStyles } from "./models/buttonstyles";
+
 export default defineAppConfig({
     contact: {
         phone: '337-366-4033',
@@ -8,6 +10,7 @@ export default defineAppConfig({
             state: "LA"
         }
     },
+    buttonStyle: ButtonStyles.Marlin,
     licenseKey: "e3de63e4-dda4-40fe-bcc8-d62dcbae121f",
     navigationLinks: [
         {
@@ -15,12 +18,8 @@ export default defineAppConfig({
             url: "/"
         },
         {
-            name: "Pools & Spas",
-            url: "/"
-        },
-        {
-            name: "About",
-            url: "/"
+            name: "components",
+            url: "/components"
         },
         {
             name: "Contact",
@@ -29,10 +28,6 @@ export default defineAppConfig({
         {
             name: "Blog",
             url: "/blog"
-        },
-        {
-            name: "Financing",
-            url: "/"
         }
     ]
 })

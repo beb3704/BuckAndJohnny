@@ -1,7 +1,7 @@
 <template>
-    <nav v-bind:class="`hidden  ${subHeader ? 'lg:flex justify-end' : 'lg:grid'}`">
+    <nav v-bind:class="`hidden  ${subHeader ? 'lg:grid' : 'lg:grid'}`">
         <NuxtLink v-for="link in appConfig.navigationLinks" :to="link.url"
-            class="text-xl uppercase font-bold text-mastheadNavLinks mb-2 mx-2 font-primary">
+            class="text-xl uppercase text-mastheadNavLinks mb-2 mx-2 font-primary text-right">
             {{ link.name }}</NuxtLink>
     </nav>
 </template>
@@ -11,6 +11,5 @@
 const appConfig = useAppConfig()
 const props = defineProps({
     subHeader: Boolean
-
 })
 </script>

@@ -1,14 +1,13 @@
 <template>
-    <div>
-        <BiscayneMasthead></BiscayneMasthead>
+    <section>
+        <MarlinMasthead></MarlinMasthead>
 
         <NuxtImg height="280" width="560" src="/lathamlogo.png" alt="Latham Brand Logo" class="m-auto" loading="lazy">
         </NuxtImg>
 
-
-
         <PrefabCenterblurb class="pt-10 pb-10" title="Family fun and relaxation" sub-title="is just a few clicks away"
-            button-text="is just a few clicks away" button-url="https://www.google.com">
+            button-text="is just a few clicks away" button-url="https://www.google.com"
+            background-image-alt="blueBackground" background-url="/bluebackground.png">
             Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium. Suspendisse potenti. Morbi ut augue
             id risus bibendum consequat. Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit amet
             interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis ante. Maecenas interdum, diam at
@@ -18,9 +17,7 @@
             lacus semper, consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus porta lacinia.
         </PrefabCenterblurb>
 
-
-    </div>
-
+    </section>
 </template>
 
 <script setup>
