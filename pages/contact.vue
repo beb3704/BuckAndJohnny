@@ -82,6 +82,9 @@
 
                             </div>
                             <div class="px-4 py-4">
+                                <label class="block text-titles text-md font-bold mb-2 pl-2" for="Message">
+                                    Message
+                                </label>
                                 <textarea v-model="data.message"
                                     class="shadow appearance-none text-bodyCopy text-xl border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                                     rows="6" />
@@ -108,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <iframe width="100%" height="450" frameborder="0" style="border: 0"
+        <iframe width="100%" height="450" frameborder="0" style="border: 0" title="Google Maps"
             :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyD10RbBi3cpHMtYcKvoosh3PDIqygnAzWI&q=${appConfig.contact.address.street},${appConfig.contact.address.city},${appConfig.contact.address.state}&attribution_source=Google+Maps+Embed+API`">
         </iframe>
 
