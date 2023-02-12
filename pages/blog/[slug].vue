@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#EDEDED]">
+    <div class="bg-[#fff]">
         <MarlinSubhead title="Blogs">
         </MarlinSubhead>
         <div class="lg:p-10 max-w-5xl m-auto">
