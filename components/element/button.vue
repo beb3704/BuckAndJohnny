@@ -9,7 +9,7 @@
 
         <button v-if="appConfig.buttonStyle === ButtonStyles.Marlin" :class="`uppercase flex justify-center items-center 
         ${buttonColor ? buttonColor : 'text-buttonColor'} ${buttonBGColor ? buttonBGColor : 'bg-buttonBackground'}
-        lg:text-xl font-bold font-primary py-2 px-24 text-base md:px-24 lg:px-32 md:text-l rounded-full`">
+        lg:text-xl font-bold font-primary py-2 px-24 text-base md:px-24 lg:px-32 md:text-l rounded-full pt-3`">
             {{ props.text }}
         </button>
 

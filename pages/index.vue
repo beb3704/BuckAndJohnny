@@ -2,20 +2,23 @@
     <section>
         <MarlinMasthead></MarlinMasthead>
 
-        <NuxtImg height="280" width="560" src="/lathamlogo.png" alt="Latham Brand Logo" class="m-auto" loading="lazy">
-        </NuxtImg>
-
-        <PrefabCenterblurb class="pt-10 pb-10" title="Family fun and relaxation" sub-title="is just a few clicks away"
-            button-text="is just a few clicks away" button-url="https://www.google.com"
-            background-image-alt="blueBackground" background-url="/bluebackground.png">
-            Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium. Suspendisse potenti. Morbi ut augue
-            id risus bibendum consequat. Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit amet
-            interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis ante. Maecenas interdum, diam at
-            sollicitudin consectetur, nunc magna pulvinar nibh, sodales semper diam purus sit amet nunc.
-            Pellentesque ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris ornare quam sit amet
-            nunc hendrerit placerat. Vestibulum sit amet ligula molestie, auctor elit eu, maximus diam. Vivamus ut
-            lacus semper, consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus porta lacinia.
+        <PrefabCenterblurb class="pt-10 pb-10" title="EXPERIENCE MEETS QUALITY "
+            sub-title="FROM A TRUSTED LOCAL BUILDER" button-text="is just a few clicks away"
+            button-url="https://precisionpools.splashdownweb.net/fiber-glass-pools">
+            Precision Pools and Landscape is a Louisiana Licensed swimming pool contractor installing high quality
+            fiberglass swimming pools in the Baton Rouge / Gonzales area. We also specialize in landscape, irrigation,
+            and outdoor kitchens. Let us help design and create your very own private oasis. Swim in days with Precision
+            Pools and Landscape!
         </PrefabCenterblurb>
+
+        <MediaLogocarousel></MediaLogocarousel>
+        <MediaImagecarousel :slides="[
+            '/image1.jpg',
+            '/image2.jpg',
+            '/image3.jpg',
+            '/image4.jpg',
+            '/image5.jpg',
+        ]"></MediaImagecarousel>
 
     </section>
 </template>
@@ -23,10 +26,10 @@
 <script setup>
 
 useSeoMeta({
-    title: "A Better title",
-    ogTitle: "A Good Title",
-    description: "A dank page",
-    ogDescription: "A dank Page",
+    title: "Precision Swimming Pools in Gonzales, LA | Baton Rouge",
+    ogTitle: "Precision Swimming Pools in Gonzales, LA | Baton Rouge",
+    description: "Build your swimming pool or backyard paradise in Gonzales, LA near Baton Rouge with Precision Pools and Landscape. Whether you'd like a totally custom pool, or a full backyard designed, we've got you covered.",
+    ogDescription: "Build your swimming pool or backyard paradise in Gonzales, LA near Baton Rouge with Precision Pools and Landscape. Whether you'd like a totally custom pool, or a full backyard designed, we've got you covered.",
     ogImage: '/logo.png'
 });
 </script>

@@ -4,9 +4,9 @@
         <MediaBackgroundimage url="/subhead/background.jpg" alt="background image"
             class="z-0 lg:rounded-b-[40%] rounded-b-[25%]">
         </MediaBackgroundimage>
-        <MediaBackgroundimage url="/masthead/backgroundoverlay.png" alt="background"
+        <!-- <MediaBackgroundimage url="/masthead/backgroundoverlay.png" alt="background"
             class="z-10 lg:rounded-b-[40%] rounded-b-[25%]">
-        </MediaBackgroundimage>
+        </MediaBackgroundimage> -->
 
         <div class="h-8 absolute w-full top-0 left-0">
             <MediaBackgroundimage url="/masthead/marlin/topstripes.png" alt="background stripes" class="z-0">
@@ -20,7 +20,7 @@
             </NuxtImg>
         </NuxtLink>
 
-        <MarlinNavigation :sub-header="true" class="p-4 z-20 lg:row-start-1 lg:col-start-2 "></MarlinNavigation>
+        <MarlinNavigation :sub-header="true" class="p-4 z-20 lg:row-start-1 lg:col-start-2 mt-10 "></MarlinNavigation>
 
         <div class="col-span-full ">
             <h1

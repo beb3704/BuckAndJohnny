@@ -10,7 +10,7 @@
                 class="w-52 md:w-60 lg:w-80 h-auto justify-self-start self-start m-10">
             </NuxtImg>
 
-            <MarlinNavigation class="p-4 justify-self-end self-start mt-8">
+            <MarlinNavigation class="p-4 justify-self-end self-start mt-10">
             </MarlinNavigation>
 
 
@@ -20,15 +20,16 @@
             <div class="col-span-full justify-self-center self-center  py-3 px-10 lg:py-6 lg:px-30">
                 <h1 class="text-mastheadTitle text-2xl 
                     md:text-4xl lg:text-6xl font-bold uppercase 
-                    text-center lg:tracking-widest font-primary
+                    text-center lg:tracking-wide font-primary
                     animate-fadeIn animation-delay-500">
                     PLAN YOUR DREAM BACKYARD
                 </h1>
                 <h2
-                    class="text-mastheadTitle lg:text-2xl uppercase text-center lg:tracking-[.5em] font-primary mt-3 animate-fadeIn animation-delay-1000">
-                    WITH BALLER POOLS & LANDSCAPE
+                    class="text-mastheadTitle lg:text-2xl uppercase text-center lg:tracking-[.4em] font-primary mt-3 animate-fadeIn animation-delay-1000">
+                    with precision pools & landscape
                 </h2>
-                <ElementButton text="build & price a pool" url="components"
+                <ElementButton text="build & price a pool"
+                    url="https://precisionpools.splashdownweb.net/fiber-glass-pools"
                     class="animate-bounce justify-self-start lg:justify-self-end self-start lg:col-span-1 col-span-full mt-12">
                 </ElementButton>
             </div>

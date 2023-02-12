@@ -2,24 +2,21 @@ import { ButtonStyles } from "./models/buttonstyles";
 
 export default defineAppConfig({
     contact: {
-        phone: '337-366-4033',
+        phone: '225-445-6771',
         address: {
-            street: "1042 Hammock Lane",
-            city: 'Breaux Bridge',
-            zip: '70517',
+            street: "13292 N Burnside Ave",
+            city: 'Gonzales',
+            zip: '70737',
             state: "LA"
-        }
+        },
+        hours: 'Mon-Fri 9:00am - 6:00pm'
     },
     buttonStyle: ButtonStyles.Marlin,
-    licenseKey: "e3de63e4-dda4-40fe-bcc8-d62dcbae121f",
+    licenseKey: "b50914e7-f63a-4b5e-b7ed-7ab439e7d920",
     navigationLinks: [
         {
             name: "Home",
             url: "/"
-        },
-        {
-            name: "components",
-            url: "/components"
         },
         {
             name: "Contact",

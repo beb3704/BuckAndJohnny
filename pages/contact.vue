@@ -7,31 +7,34 @@
             <div class="grid lg:grid-cols-[1fr_2fr]">
                 <div class="lg:mr-10 shadow-lg text-center grid grid-rows-[min-content_2fr]">
                     <div class="bg-backgroundDark uppercase text-xl text-textLight p-4">Location</div>
-                    <div class="grid items-center p-10 gap-10">
+                    <div class="grid items-between p-10 gap-10">
                         <div>
-                            <h6 class="text-titles text-xl">PHONE</h6>
+                            <h6 class="text-locationTitles text-xl">PHONE</h6>
                             <a :href="`tel:${appConfig.contact.phone}`"
-                                class="uppercase block text-xl  text-subTitles">{{
+                                class="uppercase block  text-locationSubtitles">{{
                                     appConfig.contact.phone.replaceAll('-', '.')
                                 }}
                             </a>
                         </div>
                         <div>
-                            <h6 class="text-titles text-xl">ADDRESS</h6>
-                            <a class=" block text-titles text-xl"
+                            <h6 class="text-locationTitles text-xl">ADDRESS</h6>
+                            <a class=" block text-locationSubtitles"
                                 :href="`http://maps.google.com/?q=${appConfig.contact.address.street},${appConfig.contact.address.city},${appConfig.contact.address.state},${appConfig.contact.address.zip}`">
-                                <div class=" text-titles text-xl">
+                                <div class=" text-locationSubtitles">
                                     {{ appConfig.contact.address.street }}
                                 </div>
-                                <div class=" text-titles text-xl">
+                                <div class=" text-locationSubtitles">
                                     {{ appConfig.contact.address.city }},{{ appConfig.contact.address.state }}
                                 </div>
                             </a>
                         </div>
+                        <div>
+                            <h6 class="text-locationTitles text-xl">HOURS</h6>
+                            <div class=" text-locationSubtitles">
+                                {{ appConfig.contact.hours }}
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div>
-                            <h6 class="mt-6">HOURS</h6> 
-                        </div> -->
                 </div>
 
                 <div class="FormWrapper flex flex-col relative shadow-lg lg:mx-0 mt-4 lg:mt-0 bg-white">
@@ -45,7 +48,7 @@
                                     <label class="block text-titles text-md font-bold mb-2 pl-2" for="Name">
                                         Name
                                     </label>
-                                    <input v-bind="data.name"
+                                    <input v-model="data.name"
                                         class="shadow appearance-none text-bodyCopy text-xl border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Name" />
                                 </div>
@@ -54,7 +57,7 @@
                                     <label class="block text-titles text-md font-bold mb-2 pl-2" for="Email">
                                         Email
                                     </label>
-                                    <input v-bind="data.email"
+                                    <input v-model="data.email"
                                         class="shadow appearance-none text-bodyCopy text-xl border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Email" />
                                 </div>
@@ -63,7 +66,7 @@
                                     <label class="block text-titles text-md font-bold mb-2 pl-2" for="Phone">
                                         Phone
                                     </label>
-                                    <input v-bind="data.phone"
+                                    <input v-model="data.phone"
                                         class="shadow appearance-none text-bodyCopy text-xl border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Phone" />
                                 </div>
@@ -72,7 +75,7 @@
                                     <label class="block text-titles text-md font-bold mb-2 pl-2" for="Location">
                                         Location
                                     </label>
-                                    <input v-bind="data.location"
+                                    <input v-model="data.location"
                                         class="shadow appearance-none text-bodyCopy text-xl border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Location" />
                                 </div>
@@ -84,7 +87,7 @@
                                     rows="6" />
                             </div>
                             <div v-on:click="submit()"
-                                class="w-56 px-3 m-auto py-3 uppercase font-bold text-xl text-buttonColor bg-buttonBackground flex justify-center items-center hover:cursor-pointer">
+                                class="w-56 px-3 m-auto py-3 uppercase font-bold text-xl text-buttonColor bg-buttonBackground flex justify-center items-center hover:cursor-pointer mb-4">
                                 Submit
                             </div>
                             <small class="text-gray-500">This site is protected by reCAPTCHA and the Google

@@ -14,8 +14,8 @@ module.exports = {
     colors:{
       //masthead/subheaders
       'mastheadTitle':'#00007D',
-      'mastheadNavLinks':'#1B283C',
-      'subHeaderTitle':'#1B283C',
+      'mastheadNavLinks':'#010D5A',
+      'subHeaderTitle':'#00007D',
 
       //general
       'textLight':'#fff',
@@ -27,16 +27,18 @@ module.exports = {
       'buttonBackground': '#011463',
       
       //components
-      'titles':'#3769B3',
-      'subTitles':'#2988C9',
+      'titles':'#021D86',
+      'subTitles':'#21B6FE',
       'bodyCopy':'#304555',
-      'bulletBackground':'#d3d3d3'
+      'bulletBackground':'#d3d3d3',
+      'locationTitles':'#BDBDBD',
+      'locationSubtitles':'#3F3F3F'
     },
 
     //When changing the font here, you also need to change it in the nuxt.config.ts
     fontFamily:{
-      'primary':['Open Sans'],
-      'sans': ['Lato', ...defaultTheme.fontFamily.sans],
+      'primary':['Josefin Sans'],
+      'sans': ['Josefin Sans', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       animation:{
