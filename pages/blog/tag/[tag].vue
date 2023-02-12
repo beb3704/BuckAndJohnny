@@ -27,15 +27,3 @@ if (blogs.value) {
     blogs.value = blogs.value.filter((v) => v.tags.includes(tag));
 }
 </script>
-
-<style>
-.clip {
-    clip-path: polygon(100% 0, 100% 100%, 0 70%, 0 0);
-
-}
-
-.clipMore {
-    clip-path: polygon(100% 0, 100% 100%, 0 0%, 0 0);
-
-}
-</style>

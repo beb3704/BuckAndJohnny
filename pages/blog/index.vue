@@ -21,15 +21,3 @@ const appConfig = useAppConfig()
 
 const { data: blogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)
 </script>
-
-<style scoped>
-.clip {
-    clip-path: polygon(100% 0, 100% 100%, 0 70%, 0 0);
-
-}
-
-.clipMore {
-    clip-path: polygon(100% 0, 100% 100%, 0 0%, 0 0);
-
-}
-</style>
