@@ -2,14 +2,8 @@
     <section>
         <BiscayneSubhead title="Components"></BiscayneSubhead>
 
-        <carousel>
-            <slide>
-                Slide 1 Content
-            </slide>
-            <slide>
-                Slide 2 Content
-            </slide>
-        </carousel>
+
+        <MediaCarousel></MediaCarousel>
 
         <!-- Center Blurb -->
         <PrefabCenterblurb class="pt-10 pb-10" title="Family fun and relaxation" sub-title="is just a few clicks away"
