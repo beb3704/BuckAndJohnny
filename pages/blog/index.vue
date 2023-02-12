@@ -17,8 +17,8 @@
                             {{ blog.excerpt }}
                         </div>
                     </div>
-                    <NuxtLink :to="`/blog/${blog.seoSlug}`" class="self-end  flex justify-self-end -mr-[1px]">
-                        <div class="bg-[#009AB3] w-8 clipMore">
+                    <NuxtLink :to="`/blog/${blog.seoSlug}`" class="self-end  flex justify-self-end">
+                        <div class="bg-[#009AB3] w-8 clipMore -mr-[1px]">
 
                         </div>
                         <div class="font-bold text-center uppercase py-2 bg-[#009AB3] text-[#fff] w-36">
