@@ -30,7 +30,7 @@
             lg:justify-self-start lg:row-start-2  text-4xl md:text-5xl uppercase font-bold text-subHeaderTitle font-primary mb-8">
                 {{ title }}
             </h1>
-            <ElementButton text="build & price a pool" url="https://google.com"
+            <ElementButton text="build & price a pool" url="https://precisionpools.splashdownweb.net/fiber-glass-pools"
                 class="animate-bounce pt-5 mr-1 justify-self-start 
             lg:justify-self-end self-start lg:col-span-1 col-span-full z-40 lg:self-end lg:row-start-2 lg:col-start-2 mb-14">
             </ElementButton>
