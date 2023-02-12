@@ -6,7 +6,7 @@
                 <MediaBackgroundimage url="/masthead/marlin/topstripes.png" alt="background stripes" class="z-0">
                 </MediaBackgroundimage>
             </div>
-            <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
+            <NuxtImg format="webp" quality="70" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
                 class="w-52 md:w-60 lg:w-80 h-auto justify-self-start self-start m-10">
             </NuxtImg>
 
