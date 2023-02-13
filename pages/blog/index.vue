@@ -14,7 +14,8 @@ useSeoMeta({
     ogTitle: "Blogs",
     description: "All Blogs",
     ogDescription: "All Blogs",
-    ogImage: '/logo.png'
+    ogImage: '/logo.png',
+    ogSiteName: 'Pools & Spas'
 });
 
 const appConfig = useAppConfig()

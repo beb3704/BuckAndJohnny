@@ -16,7 +16,8 @@ useSeoMeta({
     ogTitle: "Blogs",
     description: "All Blogs",
     ogDescription: "All Blogs",
-    ogImage: '/logo.png'
+    ogImage: '/logo.png',
+    ogSiteName: 'Pools & Spas'
 });
 const appConfig = useAppConfig();
 const { data: returnedBlogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)

@@ -123,7 +123,8 @@ useSeoMeta({
     ogTitle: "Contact",
     description: "Quick Contact Page",
     ogDescription: "Quick Contact Page",
-    ogImage: '/logo.png'
+    ogImage: '/logo.png',
+    ogSiteName: 'Pools & Spas'
 });
 
 
