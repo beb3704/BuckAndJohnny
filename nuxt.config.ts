@@ -26,7 +26,9 @@ export default defineNuxtConfig({
     },
     pwa: {
         meta: {
-            name: "Precision Pools & Spas"
+            name: "Precision Pools & Spas",
+            author: "Ike Melancon",
+            description: "Precision Pools & Spas",
         },
         workbox: {
             enabled: true

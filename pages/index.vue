@@ -30,6 +30,7 @@ useSeoMeta({
     ogTitle: "Precision Swimming Pools in Gonzales, LA | Baton Rouge",
     description: "Build your swimming pool or backyard paradise in Gonzales, LA near Baton Rouge with Precision Pools and Landscape. Whether you'd like a totally custom pool, or a full backyard designed, we've got you covered.",
     ogDescription: "Build your swimming pool or backyard paradise in Gonzales, LA near Baton Rouge with Precision Pools and Landscape. Whether you'd like a totally custom pool, or a full backyard designed, we've got you covered.",
-    ogImage: '/logo.png'
+    ogImage: '/logo.png',
+    ogSiteName: "Precision Swimming Pools in Gonzales"
 });
 </script>

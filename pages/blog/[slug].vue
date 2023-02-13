@@ -26,7 +26,8 @@ useSeoMeta({
     ogTitle: blog.value?.title,
     description: blog.value?.excerpt,
     ogDescription: blog.value?.excerpt,
-    ogImage: blog.value?.imageUrl
+    ogImage: blog.value?.imageUrl,
+    ogSiteName: "Precision Swimming Pools in Gonzales"
 });
 </script>
 

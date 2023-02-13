@@ -42,7 +42,8 @@ useSeoMeta({
     ogTitle: "Blogs",
     description: "All Blogs",
     ogDescription: "All Blogs",
-    ogImage: '/logo.png'
+    ogImage: '/logo.png',
+    ogSiteName: "Precision Swimming Pools in Gonzales"
 });
 const appConfig = useAppConfig();
 const { data: blogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)
