@@ -24,7 +24,14 @@ export default defineNuxtConfig({
             'Josefin Sans': [400, 700],
         }
     },
-
+    pwa: {
+        meta: {
+            name: "Precision Pools & Spas"
+        },
+        workbox: {
+            enabled: true
+        }
+    },
     delayHydration: { mode: 'mount' },
     typescript: { strict: true },
 
