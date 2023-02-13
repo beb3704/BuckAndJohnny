@@ -25,7 +25,16 @@ export default defineNuxtConfig({
             'Open Sans': [400, 700],
         }
     },
-
+    pwa: {
+        meta: {
+            name: "Pools & Spas",
+            author: "Ike Melancon",
+            description: "Pools & Spas",
+        },
+        workbox: {
+            enabled: true
+        }
+    },
     delayHydration: { mode: 'mount' },
     typescript: { strict: true },
 
