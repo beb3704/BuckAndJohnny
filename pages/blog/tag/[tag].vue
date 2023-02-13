@@ -2,7 +2,7 @@
     <div class="bg-[#fff]">
         <MarlinSubhead title="Blogs">
         </MarlinSubhead>
-        <div class="grid max-w-7xl md:gap-10 justify-center lg:grid-cols-2 md:p-5 m-auto">
+        <div class="grid max-w-7xl md:gap-10 justify-center lg:grid-cols-2 md:p-5 md:py-28 m-auto py-14 p-2">
 
             <article v-for="blog in blogs"
                 class="from-backgroundLight bg-gradient-to-t to-[#fff] relative flex flex-col shadow-md rounded-lg overflow-hidden">
