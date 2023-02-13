@@ -29,9 +29,6 @@ export default defineNuxtConfig({
             name: "Precision Pools & Spas",
             author: "Ike Melancon",
             description: "Precision Pools & Spas",
-        },
-        workbox: {
-            enabled: true
         }
     },
     delayHydration: { mode: 'mount' },
