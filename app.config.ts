@@ -2,7 +2,7 @@ import { ButtonStyles } from "./models/buttonstyles";
 
 export default defineAppConfig({
     contact: {
-        phone: '337-366-4033',
+        phone: '210.260.1145',
         address: {
             street: "1042 Hammock Lane",
             city: 'Breaux Bridge',
@@ -18,8 +18,8 @@ export default defineAppConfig({
             url: "/"
         },
         {
-            name: "components",
-            url: "/components"
+            name: "Pools & Spas",
+            url: "/pools-and-spas"
         },
         {
             name: "Contact",
