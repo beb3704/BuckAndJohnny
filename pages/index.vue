@@ -24,6 +24,8 @@
 </template>
 
 <script setup>
+import Boxy from '~~/splashdown/components/boxy.vue';
+
 
 useSeoMeta({
     title: "Precision Swimming Pools in Gonzales, LA | Baton Rouge",

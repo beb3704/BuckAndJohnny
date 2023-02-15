@@ -99,7 +99,6 @@
                                 <a href="https://policies.google.com/terms">Terms of Service</a>
                                 apply.
                             </small>
-                            <loader v-show="data.submitting" />
                         </div>
                         <div key="2" class="px-5 flex-grow flex justify-center items-center text-2xl py-16" v-else>
                             <div class="text-bodyCopy">
@@ -111,7 +110,8 @@
                 </div>
             </div>
         </div>
-        <iframe width="100%" height="450" frameborder="0" style="border: 0" title="Google Maps"
+        <iframe width="100%" height="450" frameborder="0" style="border: 0" title="Google Maps" <iframe width="100%"
+            height="450" frameborder="0" style="border: 0" title="Google Maps"
             :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyD10RbBi3cpHMtYcKvoosh3PDIqygnAzWI&q=${appConfig.contact.address.street},${appConfig.contact.address.city},${appConfig.contact.address.state}&attribution_source=Google+Maps+Embed+API`">
         </iframe>
 

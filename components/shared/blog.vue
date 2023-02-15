@@ -1,8 +1,6 @@
 <template>
     <div class="bg-[#fff]">
-        <MarlinSubhead title="Blogs">
-        </MarlinSubhead>
-        <div class="grid max-w-7xl md:gap-10 justify-center lg:grid-cols-2 md:p-5 md:py-28 m-auto py-14 p-2">
+        <div class="grid max-w-7xl md:gap-10 justify-center lg:grid-cols-2 md:p-5 m-auto">
 
             <article v-for="blog in blogs"
                 class="from-backgroundLight bg-gradient-to-t to-[#fff] relative flex flex-col shadow-md rounded-lg overflow-hidden">
@@ -11,9 +9,8 @@
                     alt="blog image">
                 </NuxtImg>
                 <div class="lg:p-4 relative z-10 bg-[#fff] -mt-32 m-4 shadow-sm h-full grid  rounded">
-                    <NuxtLink :to="`/blog/${blog.seoSlug}`" class="self-end  flex justify-self-end">
-
-                        <div class="relative">
+                    <NuxtLink :to="`/blog/${blog.seoSlug}`" class="self-end  flex  justify-self-end w-full h-full">
+                        <div class="relative w-full h-full">
                             <div>
                                 <div class="p-4  font-bold text-titles">
                                     {{ blog.title }}
@@ -32,19 +29,25 @@
     </div>
 </template>
 
-<script setup lang="ts">
+
+<script  setup lang="ts">
+import { PropType } from 'vue';
 import { Blog } from '~~/models/blog';
 
-useSeoMeta({
-    title: "Blogs",
-    ogTitle: "Blogs",
-    description: "All Blogs",
-    ogDescription: "All Blogs",
-    ogImage: '/logo.png',
-    ogSiteName: "Precision Swimming Pools in Gonzales"
-});
+const props = defineProps({
+    blogs: { type: Array as PropType<Array<Blog>>, required: true },
+})
 
-const appConfig = useAppConfig()
-
-const { data: blogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)
 </script>
+
+<style scoped>
+.clip {
+    clip-path: polygon(100% 0, 100% 100%, 0 70%, 0 0);
+
+}
+
+.clipMore {
+    clip-path: polygon(100% 0, 100% 100%, 0 0%, 0 0);
+
+}
+</style>

@@ -46,18 +46,13 @@ useSeoMeta({
     ogSiteName: "Precision Swimming Pools in Gonzales"
 });
 const appConfig = useAppConfig();
-const { data: blogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)
+const { data: returnedBlogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)
 const route = useRoute();
-
-
-function getFilteredBlog() {
-    let tag = route.params.tag as string;
-    if (tag) {
-        return blogs.value?.filter((v) => v.tags.includes(tag));
-    }
+let tag = route.params.tag as string;
+const blogs = reactive(returnedBlogs);
+if (blogs.value) {
+    blogs.value = blogs.value.filter((v) => v.tags.includes(tag));
 }
-
-
 </script>
 
 <style scoped>
