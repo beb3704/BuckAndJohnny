@@ -13,14 +13,14 @@
     >
     </MediaBackgroundimage>
 
-    <div class="h-8 absolute w-full top-0 left-0">
+    <!--     <div class="h-8 absolute w-full top-0 left-0">
       <MediaBackgroundimage
         url="/masthead/marlin/topstripes.png"
         alt="background stripes"
         class="z-0"
       >
       </MediaBackgroundimage>
-    </div>
+    </div> -->
 
     <NuxtLink
       to="/"

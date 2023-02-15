@@ -1,7 +1,7 @@
 <template>
   <section>
-    <BiscayneSubhead title="Components"></BiscayneSubhead>
-
+    <BiscayneSubhead title="Pools & Spas"></BiscayneSubhead>
+    <!-- 
     <MediaImagecarousel
       :slides="[
         'https://splashdownstorage.blob.core.windows.net/splashdown/86c7c2db-a269-4c09-a072-e18104bc579a/1178f029-2895-424e-98a9-a2b133bc1794-pool-content-34.jpg',
@@ -14,7 +14,7 @@
 
     <MediaLogocarousel></MediaLogocarousel>
 
-    <!-- Center Blurb -->
+
     <PrefabCenterblurb
       class="pt-10 pb-10"
       title="Family fun and relaxation"
@@ -35,9 +35,9 @@
       molestie, auctor elit eu, maximus diam. Vivamus ut lacus semper,
       consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus
       porta lacinia.
-    </PrefabCenterblurb>
+    </PrefabCenterblurb> -->
 
-    <!-- double blurb -->
+    <!-- double blurb
 
     <div class="p-4 max-w-6xl m-auto grid lg:grid-cols-2 gap-12 py-10">
       <PrefabBlurb
@@ -70,25 +70,45 @@
         lacus porta lacinia.
       </PrefabBlurb>
     </div>
+  -->
 
+    <!-- hover images -->
+    <br />
+    <br />
+    <div class="max-w-7xl m-auto grid md:grid-cols-2 gap-6">
+      <NuxtLink to="/">
+        <PrefabHoverimage
+          url="/hottie.jpg"
+          imgAlt="hottie"
+          title="GUNITE POOLS"
+          sub-title="BUILD AND PRICE NOW!"
+        >
+        </PrefabHoverimage>
+      </NuxtLink>
+
+      <NuxtLink to="/">
+        <PrefabHoverimage
+          url="/kid.jpg"
+          imgAlt="hottie"
+          title="FIBERGLASS POOLS"
+          sub-title="BUILD AND PRICE NOW!"
+        >
+        </PrefabHoverimage>
+      </NuxtLink>
+    </div>
     <!-- bullet blurb -->
-    <div class="p-4 max-w-6xl m-auto grid lg:grid-cols-2 gap-12 py-10">
-      <PrefabBlurb
-        title="Suspendisse et dapibus"
-        sub-title="Nunc ullamcorper eu risus eu pretium"
+    <div class="max-w-6xl m-auto grid lg:grid-cols-2 gap-10 py-10">
+      <PrefabBulletblurb
+        title="et dapibus"
+        sub-title="Nunc ullamcorper eu pretium"
       >
-        Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium.
-        Suspendisse potenti. Morbi ut augue id risus bibendum consequat.
-        Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit
-        amet interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis
-        ante. Maecenas interdum, diam at sollicitudin consectetur, nunc magna
-        pulvinar nibh, sodales semper diam purus sit amet nunc. Pellentesque
-        ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris
-        ornare quam sit amet nunc hendrerit placerat. Vestibulum sit amet ligula
-        molestie, auctor elit eu, maximus diam. Vivamus ut lacus semper,
-        consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et
-        lacus porta lacinia.
-      </PrefabBlurb>
+        <li>Suspendisse et dapibus orci.</li>
+        <li>Suspendisse et dapibus orci.</li>
+        <li>Suspendisse et dapibus orci.</li>
+        <li>Suspendisse et dapibus orci.</li>
+        <li>Suspendisse et dapibus orci.</li>
+        <li>Suspendisse et dapibus orci.</li>
+      </PrefabBulletblurb>
       <PrefabBulletblurb
         title="et dapibus"
         sub-title="Nunc ullamcorper eu pretium"
@@ -101,51 +121,6 @@
         <li>Suspendisse et dapibus orci.</li>
       </PrefabBulletblurb>
     </div>
-
-    <!-- hover images -->
-    <div class="max-w-7xl m-auto grid md:grid-cols-2">
-      <NuxtLink to="/">
-        <PrefabHoverimage
-          url="/hottie.jpg"
-          imgAlt="hottie"
-          title="A Cool Title"
-          sub-title="A cooler subTitle"
-          :style="HoverBoxStyles.BottomText"
-        >
-        </PrefabHoverimage>
-      </NuxtLink>
-
-      <NuxtLink to="/">
-        <PrefabHoverimage
-          :style="HoverBoxStyles.Default"
-          url="/hottie.jpg"
-          imgAlt="hottie"
-          title="A Cool Title"
-          sub-title="A cooler subTitle"
-        >
-        </PrefabHoverimage>
-      </NuxtLink>
-
-      <NuxtLink to="/">
-        <PrefabHoverimage
-          url="/hottie.jpg"
-          imgAlt="hottie"
-          title="A Cool Title"
-          sub-title="A cooler subTitle"
-        >
-        </PrefabHoverimage>
-      </NuxtLink>
-
-      <NuxtLink to="/">
-        <PrefabHoverimage
-          url="/hottie.jpg"
-          imgAlt="hottie"
-          title="A Cool Title"
-          sub-title="A cooler subTitle"
-        >
-        </PrefabHoverimage>
-      </NuxtLink>
-    </div>
   </section>
 </template>
 
@@ -156,8 +131,8 @@ import { HoverBoxStyles } from "~~/models/hoverboxstyles";
 useSeoMeta({
   title: "A Better title",
   ogTitle: "A Good Title",
-  description: "A dank page",
-  ogDescription: "A dank Page",
+  description: "Mark's Page",
+  ogDescription: "Mark's Page",
   ogImage: "/poolcorp-logo.png",
 });
 </script>

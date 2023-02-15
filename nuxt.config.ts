@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
     pages: true,
+    ssr: false,
     postcss: {
         plugins: {
             tailwindcss: {},
@@ -31,10 +32,8 @@ export default defineNuxtConfig({
             author: "Ike Melancon",
             description: "Pools & Spas",
         },
-        workbox: {
-            enabled: true
-        }
     },
+
     delayHydration: { mode: 'mount' },
     typescript: { strict: true },
 
