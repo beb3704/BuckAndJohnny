@@ -123,7 +123,7 @@ useSeoMeta({
     ogTitle: "Contact",
     description: "Quick Contact Page",
     ogDescription: "Quick Contact Page",
-    ogImage: '/logo.png',
+    ogImage: '/poolcorp-logo.png',
     ogSiteName: 'Pools & Spas'
 });
 

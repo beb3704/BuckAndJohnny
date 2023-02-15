@@ -106,6 +106,6 @@ useSeoMeta({
     ogTitle: "A Good Title",
     description: "A dank page",
     ogDescription: "A dank Page",
-    ogImage: '/logo.png'
+    ogImage: '/poolcorp-logo.png'
 });
 </script>

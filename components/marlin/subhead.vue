@@ -15,7 +15,7 @@
 
         <NuxtLink to="/"
             class="justify-self-start self-center col-span-full block lg:justify-self-start lg:row-start-1 z-10 lg:ml-10">
-            <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
+            <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/poolcorp-logo.png" alt="logo"
                 class="w-44 md:w-52 lg:w-64 h-auto">
             </NuxtImg>
         </NuxtLink>
