@@ -21,9 +21,6 @@
 </template>
 
 <script setup>
-import Boxy from '~~/splashdown/components/boxy.vue';
-
-
 useSeoMeta({
     title: "A Better title",
     ogTitle: "A Good Title",
