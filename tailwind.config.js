@@ -7,8 +7,7 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
-    "./app.vue",
-    "./splashdown/components/**/*.{js,vue,ts}"
+    "./app.vue"
   ],
 
   theme: {
