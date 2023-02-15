@@ -110,8 +110,7 @@
                 </div>
             </div>
         </div>
-        <iframe width="100%" height="450" frameborder="0" style="border: 0" title="Google Maps" <iframe width="100%"
-            height="450" frameborder="0" style="border: 0" title="Google Maps"
+        <iframe width="100%" height="450" frameborder="0" style="border: 0" title="Google Maps"
             :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyD10RbBi3cpHMtYcKvoosh3PDIqygnAzWI&q=${appConfig.contact.address.street},${appConfig.contact.address.city},${appConfig.contact.address.state}&attribution_source=Google+Maps+Embed+API`">
         </iframe>
 
@@ -129,8 +128,7 @@ useSeoMeta({
     ogTitle: "Contact",
     description: "Quick Contact Page",
     ogDescription: "Quick Contact Page",
-    ogImage: '/logo.png',
-    ogSiteName: "Precision Swimming Pools in Gonzales"
+    ogImage: '/logo.png'
 });
 
 
