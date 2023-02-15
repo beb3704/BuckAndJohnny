@@ -70,7 +70,7 @@
         </div>
 
         <!-- hover images -->
-        <div class=" max-w-7xl m-auto grid md:grid-cols-2">
+        <div class="max-w-7xl m-auto grid md:grid-cols-2">
             <NuxtLink to="/">
                 <PrefabHoverimage url="/hottie.jpg" imgAlt="hottie" title="A Cool Title" sub-title="A cooler subTitle"
                     :style="HoverBoxStyles.BottomText">
