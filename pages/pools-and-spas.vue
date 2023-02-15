@@ -1,6 +1,6 @@
 <template>
   <section>
-    <BiscayneSubhead title="Pools & Spas"></BiscayneSubhead>
+    <MarlinSubhead title="Pools & Spas"></MarlinSubhead>
     <!-- 
     <MediaImagecarousel
       :slides="[
@@ -76,7 +76,7 @@
     <br />
     <br />
     <div class="max-w-7xl m-auto grid md:grid-cols-2 gap-6">
-      <NuxtLink to="/">
+      <NuxtLink to="https://markfrazier.splashdownweb.net/gunite-pools">
         <PrefabHoverimage
           url="/hottie.jpg"
           imgAlt="hottie"
@@ -86,7 +86,7 @@
         </PrefabHoverimage>
       </NuxtLink>
 
-      <NuxtLink to="/">
+      <NuxtLink to="https://markfrazier.splashdownweb.net/fiber-glass-pools">
         <PrefabHoverimage
           url="/kid.jpg"
           imgAlt="hottie"

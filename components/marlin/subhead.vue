@@ -71,7 +71,7 @@
       >
         {{ title }}
       </h1>
-      <ElementButton
+      <!--   <ElementButton
         text="build & price a pool"
         url="https://google.com"
         class="
@@ -88,7 +88,7 @@
           mb-14
         "
       >
-      </ElementButton>
+      </ElementButton> -->
     </div>
   </div>
 </template>
