@@ -9,7 +9,7 @@
         <ul class="m-auto text-lg text-bodyCopy grid gap-4">
             <slot></slot>
         </ul>
-</div>
+    </div>
 </template>
 
 <script setup lang="ts">
