@@ -26,28 +26,28 @@
 
 
         <!-- double blurb -->
-        <MediaAnimateinviewport>
-            <div class="p-4 max-w-6xl m-auto grid lg:grid-cols-2 gap-12 py-10">
-                <PrefabBlurb title="Suspendisse et dapibus" sub-title="Nunc ullamcorper eu risus eu pretium">
-                    Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium. Suspendisse potenti. Morbi ut augue
-                    id risus bibendum consequat. Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit amet
-                    interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis ante. Maecenas interdum, diam at
-                    sollicitudin consectetur, nunc magna pulvinar nibh, sodales semper diam purus sit amet nunc.
-                    Pellentesque ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris ornare quam sit amet
-                    nunc hendrerit placerat. Vestibulum sit amet ligula molestie, auctor elit eu, maximus diam. Vivamus ut
-                    lacus semper, consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus porta lacinia.
-                </PrefabBlurb>
-                <PrefabBlurb title="et dapibus" sub-title="Nunc ullamcorper eu pretium">
-                    Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium. Suspendisse potenti. Morbi ut augue
-                    id risus bibendum consequat. Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit amet
-                    interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis ante. Maecenas interdum, diam at
-                    sollicitudin consectetur, nunc magna pulvinar nibh, sodales semper diam purus sit amet nunc.
-                    Pellentesque ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris ornare quam sit amet
-                    nunc hendrerit placerat. Vestibulum sit amet ligula molestie, auctor elit eu, maximus diam. Vivamus ut
-                    lacus semper, consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus porta lacinia.
-                </PrefabBlurb>
-            </div>
-        </MediaAnimateinviewport>
+
+        <div class="p-4 max-w-6xl m-auto grid lg:grid-cols-2 gap-12 py-10">
+            <PrefabBlurb title="Suspendisse et dapibus" sub-title="Nunc ullamcorper eu risus eu pretium">
+                Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium. Suspendisse potenti. Morbi ut augue
+                id risus bibendum consequat. Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit amet
+                interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis ante. Maecenas interdum, diam at
+                sollicitudin consectetur, nunc magna pulvinar nibh, sodales semper diam purus sit amet nunc.
+                Pellentesque ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris ornare quam sit amet
+                nunc hendrerit placerat. Vestibulum sit amet ligula molestie, auctor elit eu, maximus diam. Vivamus ut
+                lacus semper, consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus porta lacinia.
+            </PrefabBlurb>
+            <PrefabBlurb title="et dapibus" sub-title="Nunc ullamcorper eu pretium">
+                Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium. Suspendisse potenti. Morbi ut augue
+                id risus bibendum consequat. Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit amet
+                interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis ante. Maecenas interdum, diam at
+                sollicitudin consectetur, nunc magna pulvinar nibh, sodales semper diam purus sit amet nunc.
+                Pellentesque ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris ornare quam sit amet
+                nunc hendrerit placerat. Vestibulum sit amet ligula molestie, auctor elit eu, maximus diam. Vivamus ut
+                lacus semper, consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus porta lacinia.
+            </PrefabBlurb>
+        </div>
+
         <MediaAnimateinviewport>
             <!-- bullet blurb -->
             <div class="p-4 max-w-6xl m-auto grid lg:grid-cols-2 gap-12 py-10">
@@ -71,31 +71,31 @@
             </div>
         </MediaAnimateinviewport>
         <!-- hover images -->
-        <MediaAnimateinviewport>
-            <div class=" max-w-7xl m-auto grid md:grid-cols-2">
-                <NuxtLink to="/">
-                    <PrefabHoverimage url="/hottie.jpg" imgAlt="hottie" title="A Cool Title" sub-title="A cooler subTitle"
-                        :style="HoverBoxStyles.BottomText">
-                    </PrefabHoverimage>
-                </NuxtLink>
 
-                <NuxtLink to="/">
-                    <PrefabHoverimage :style="HoverBoxStyles.Default" url="/hottie.jpg" imgAlt="hottie" title="A Cool Title"
-                        sub-title="A cooler subTitle">
-                    </PrefabHoverimage>
-                </NuxtLink>
+        <div class=" max-w-7xl m-auto grid md:grid-cols-2">
+            <NuxtLink to="/">
+                <PrefabHoverimage url="/hottie.jpg" imgAlt="hottie" title="A Cool Title" sub-title="A cooler subTitle"
+                    :style="HoverBoxStyles.BottomText">
+                </PrefabHoverimage>
+            </NuxtLink>
 
-                <NuxtLink to="/">
-                    <PrefabHoverimage url="/hottie.jpg" imgAlt="hottie" title="A Cool Title" sub-title="A cooler subTitle">
-                    </PrefabHoverimage>
-                </NuxtLink>
+            <NuxtLink to="/">
+                <PrefabHoverimage :style="HoverBoxStyles.Default" url="/hottie.jpg" imgAlt="hottie" title="A Cool Title"
+                    sub-title="A cooler subTitle">
+                </PrefabHoverimage>
+            </NuxtLink>
 
-                <NuxtLink to="/">
-                    <PrefabHoverimage url="/hottie.jpg" imgAlt="hottie" title="A Cool Title" sub-title="A cooler subTitle">
-                    </PrefabHoverimage>
-                </NuxtLink>
-            </div>
-        </MediaAnimateinviewport>
+            <NuxtLink to="/">
+                <PrefabHoverimage url="/hottie.jpg" imgAlt="hottie" title="A Cool Title" sub-title="A cooler subTitle">
+                </PrefabHoverimage>
+            </NuxtLink>
+
+            <NuxtLink to="/">
+                <PrefabHoverimage url="/hottie.jpg" imgAlt="hottie" title="A Cool Title" sub-title="A cooler subTitle">
+                </PrefabHoverimage>
+            </NuxtLink>
+        </div>
+
 
     </section>
 </template>
