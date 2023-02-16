@@ -97,28 +97,26 @@
       </NuxtLink>
     </div>
     <!-- bullet blurb -->
-    <div class="max-w-6xl m-auto grid lg:grid-cols-2 gap-10 py-10">
-      <PrefabBulletblurb
-        title="et dapibus"
-        sub-title="Nunc ullamcorper eu pretium"
-      >
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
+    <div class="max-w-7xl m-auto grid lg:grid-cols-2 gap-10 py-10">
+      <PrefabBulletblurb title="et dapibus" sub-title="Gunite Pool Pros">
+        <li>Long-Term Durability</li>
+        <li>Completely Customizable Dimensions</li>
+        <li>Accommodates Special Features</li>
       </PrefabBulletblurb>
-      <PrefabBulletblurb
-        title="et dapibus"
-        sub-title="Nunc ullamcorper eu pretium"
-      >
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
-        <li>Suspendisse et dapibus orci.</li>
+      <PrefabBulletblurb title="et dapibus" sub-title="Gunite Pool Cons">
+        <li>Needs Resurfacing Every 10-15 yrs</li>
+        <li>Longer Install Period: 1.5-3 Months</li>
+        <li>Rougher Surface, Can be Abrasive</li>
+      </PrefabBulletblurb>
+      <PrefabBulletblurb title="et dapibus" sub-title="Fiberglass Pool Pros">
+        <li>Lower Maintenance Costs</li>
+        <li>Non-Porous Surface, Inhibits Algae</li>
+        <li>Shorter Install Period: 2-3 Weeks</li>
+      </PrefabBulletblurb>
+      <PrefabBulletblurb title="et dapibus" sub-title="Fiberglass Pool Cons">
+        <li>Limited Dimensions</li>
+        <li>Surface can be Slippery</li>
+        <li>Limited Special Features</li>
       </PrefabBulletblurb>
     </div>
   </section>

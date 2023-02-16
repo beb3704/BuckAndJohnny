@@ -11,7 +11,7 @@ export default defineAppConfig({
         }
     },
     buttonStyle: ButtonStyles.Marlin,
-    licenseKey: "e3de63e4-dda4-40fe-bcc8-d62dcbae121f",
+    licenseKey: "2b8c541a-ccf2-484d-9af9-eac9a3a3a5e6",
     navigationLinks: [
         {
             name: "Home",

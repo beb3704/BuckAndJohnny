@@ -5,7 +5,7 @@
     <NuxtImg
       height="280"
       width="560"
-      src="/lathamlogo.png"
+      src="/imagine.png"
       alt="Latham Brand Logo"
       class="m-auto"
       loading="lazy"
@@ -21,18 +21,15 @@
       background-image-alt="blueBackground"
       background-url="/bluebackground.png"
     >
-      Suspendisse et dapibus orci. Nunc ullamcorper eu risus eu pretium.
-      Suspendisse potenti. Morbi ut augue id risus bibendum consequat.
-      Vestibulum sed turpis massa. Nulla cursus facilisis dolor. Quisque sit
-      amet interdum ante. Aliquam eget nulla rutrum, cursus nibh vitae, mollis
-      ante. Maecenas interdum, diam at sollicitudin consectetur, nunc magna
-      pulvinar nibh, sodales semper diam purus sit amet nunc. Pellentesque
-      ornare velit quis libero malesuada, a pretium tortor pulvinar. Mauris
-      ornare quam sit amet nunc hendrerit placerat. Vestibulum sit amet ligula
-      molestie, auctor elit eu, maximus diam. Vivamus ut lacus semper,
-      consectetur ipsum fermentum, imperdiet sem. Maecenas lacinia dui et lacus
-      porta lacinia.
-    </PrefabCenterblurb>
+      Making the decision to build a swimming pool is an easy one, especially
+      once you consider the many benefits of pool ownership. If the decision to
+      build is simple, selecting the shape, size and “look” of is a little more
+      challenging. The options available today are literally limitless, and your
+      pool can range from the traditional rectangular pool of your childhood
+      days to a more sophisticated tropical paradise pool that rivals the finest
+      creations of Mother Nature. Luckily, at Mark Frazier Pools we offer a fun,
+      interactive way to shop for pools.</PrefabCenterblurb
+    >
   </section>
 </template>
 
@@ -40,8 +37,8 @@
 useSeoMeta({
   title: "A Better title",
   ogTitle: "A Good Title",
-  description: "A dank page",
-  ogDescription: "A dank Page",
+  description: "Awesome Page",
+  ogDescription: "Awesome Page",
   ogImage: "/poolcorp-logo.png",
   ogSiteName: "Pools & Spas",
 });
