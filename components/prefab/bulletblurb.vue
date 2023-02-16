@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <h2 class="text-titles text-2xl">
-            {{ props.subTitle }}
+            {{ props.title }}
         </h2>
         <h3 class="mb-4 text-l text-subTitles" v-if="props.subTitle">
             {{ props.subTitle }}
@@ -9,7 +9,7 @@
         <ul class="m-auto text-lg text-bodyCopy grid gap-4">
             <slot></slot>
         </ul>
-    </div>
+</div>
 </template>
 
 <script setup lang="ts">
