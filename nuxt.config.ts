@@ -1,7 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const setSSRMode = () => {
+    const environment = process.env.SET_SSR_TO_FALSE;
+    if (environment) {
+        return false;
+    }
+    return true;
+};
+
 export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
     pages: true,
+    ssr: setSSRMode(),
     postcss: {
         plugins: {
             tailwindcss: {},
