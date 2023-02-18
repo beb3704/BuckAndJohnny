@@ -1,6 +1,6 @@
 <template>
     <section>
-        <MarlinMasthead></MarlinMasthead>
+        <TortugaMasthead></TortugaMasthead>
 
         <NuxtImg height="280" width="560" src="/lathamlogo.png" alt="Latham Brand Logo" class="m-auto" loading="lazy">
         </NuxtImg>

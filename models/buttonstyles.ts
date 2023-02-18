@@ -1,4 +1,6 @@
 export enum ButtonStyles {
     Biscayne = "biscayne",
-    Marlin = 'marlin'
+    Marlin = 'marlin',
+    Tortuga = 'tortuga',
+    CopaCabana = 'copacabana'
 }

@@ -10,7 +10,7 @@ export default defineAppConfig({
             state: "LA"
         }
     },
-    buttonStyle: ButtonStyles.Marlin,
+    buttonStyle: ButtonStyles.Tortuga,
     licenseKey: "e3de63e4-dda4-40fe-bcc8-d62dcbae121f",
     navigationLinks: [
         {

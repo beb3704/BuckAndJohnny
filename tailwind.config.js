@@ -13,9 +13,9 @@ module.exports = {
   theme: {
     colors:{
       //masthead/subheaders
-      'mastheadTitle':'#00007D',
-      'mastheadNavLinks':'#1B283C',
-      'subHeaderTitle':'#1B283C',
+      'mastheadTitle':'#26F3B8',
+      'mastheadNavLinks':'#26F3B8',
+      'subHeaderTitle':'#26F3B8',
 
       //general
       'textLight':'#fff',
@@ -23,8 +23,8 @@ module.exports = {
       'backgroundDark':'#1B283C',
       'accent':'#FBD551',
 
-      'buttonColor':'#fff',
-      'buttonBackground': '#011463',
+      'buttonColor':'#1F3D47',
+      'buttonBackground': '#26F3B8',
       
       //components
       'titles':'#3769B3',
