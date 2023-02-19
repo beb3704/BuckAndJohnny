@@ -19,10 +19,11 @@ const innerWidth = ref(0)
 
 onMounted(() => {
     window.addEventListener('resize', resize)
-    setTimeout(() => {
+
+    nextTick(() => {
         innerHeight.value = window.innerHeight;
         innerWidth.value = window.innerWidth;
-    });
+    })
 })
 
 onUnmounted(() => {
@@ -40,7 +41,6 @@ const classes = computed(() => {
     } else {
         return `height:${innerHeight.value}px`
     }
-
 })
 
 </script>
