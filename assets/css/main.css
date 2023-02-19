@@ -6,15 +6,60 @@
   .animation-delay-0{
     animation-delay: 0;
     animation-fill-mode: backwards;
-  }
+  } 
 
   .animation-delay-500{
     animation-delay: 500ms;
     animation-fill-mode: backwards;
   }
 
+  .animation-delay-600{
+    animation-delay: 600ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-700{
+    animation-delay: 700ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-800{
+    animation-delay: 800ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-900{
+    animation-delay: 900ms;
+    animation-fill-mode: backwards;
+  }
+
   .animation-delay-1000{
     animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-1100{
+    animation-delay: 1100ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-1200{
+    animation-delay: 1200ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-1300{
+    animation-delay: 1300ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-1400{
+    animation-delay: 1400ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-1500{
+    animation-delay: 1500ms;
     animation-fill-mode: backwards;
   }
 
