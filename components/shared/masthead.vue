@@ -18,9 +18,21 @@ const innerHeight = ref(0);
 const innerWidth = ref(0)
 
 onMounted(() => {
+    window.addEventListener('resize', resize)
+    setTimeout(() => {
+        innerHeight.value = window.innerHeight;
+        innerWidth.value = window.innerWidth;
+    });
+})
+
+onUnmounted(() => {
+    window.removeEventListener('resize', resize);
+})
+
+function resize() {
     innerHeight.value = window.innerHeight;
     innerWidth.value = window.innerWidth;
-})
+}
 
 const classes = computed(() => {
     if (innerWidth.value <= 640) {
