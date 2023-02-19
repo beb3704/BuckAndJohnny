@@ -42,7 +42,7 @@ export default defineNuxtConfig({
             description: "Pools & Spas",
         }
     },
-    delayHydration: { mode: 'mount' },
+    delayHydration: { mode: false },
     typescript: { strict: true },
 
     app: {
