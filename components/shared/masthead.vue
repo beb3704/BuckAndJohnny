@@ -14,8 +14,13 @@ import { AppStyles } from '~~/models/appstyles';
 
 const appConfig = useAppConfig();
 
-const innerHeight = ref(window.innerHeight);
-const innerWidth = ref(window.innerWidth)
+const innerHeight = ref(0);
+const innerWidth = ref(0)
+
+onMounted(() => {
+    innerHeight.value = window.innerHeight;
+    innerWidth.value = window.innerWidth;
+})
 
 const classes = computed(() => {
     if (innerWidth.value <= 640) {
