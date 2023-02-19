@@ -1,5 +1,5 @@
 <template>
-    <section :style="style">
+    <section class="height">
         <BiscayneMasthead v-if="appConfig.appStyle === AppStyles.Biscayne"></BiscayneMasthead>
 
         <MarlinMasthead v-if="appConfig.appStyle === AppStyles.Marlin"></MarlinMasthead>
@@ -12,14 +12,10 @@
 <script setup lang="ts">
 import { AppStyles } from '~~/models/appstyles';
 const appConfig = useAppConfig();
-
-const style = ref("");
-
-onMounted(() => {
-    if (window.innerWidth <= 640) {
-        style.value = `height:${window.innerHeight - 64}px`
-    } else {
-        style.value = `height:${window.innerHeight}px`
-    }
-})
 </script>
+
+<style scoped>
+.height {
+    height: calc(100vh - 64px);
+}
+</style>
