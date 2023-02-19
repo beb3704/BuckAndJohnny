@@ -20,6 +20,11 @@ const innerWidth = ref(0)
 onMounted(() => {
     window.addEventListener('resize', resize)
 
+    setTimeout(() => {
+        innerHeight.value = window.innerHeight;
+        innerWidth.value = window.innerWidth;
+    }, 100);
+
     nextTick(() => {
         innerHeight.value = window.innerHeight;
         innerWidth.value = window.innerWidth;
