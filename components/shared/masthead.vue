@@ -1,5 +1,6 @@
 <template>
     <section :class="`h-[calc(var(--vh)-64px)] md:h-screen`">
+        {{ innerHeight }}
         <BiscayneMasthead v-if="appConfig.appStyle === AppStyles.Biscayne"></BiscayneMasthead>
 
         <MarlinMasthead v-if="appConfig.appStyle === AppStyles.Marlin"></MarlinMasthead>
@@ -15,9 +16,12 @@ const appConfig = useAppConfig();
 const innerHeight = ref(0);
 
 
+watchEffect(() => {
+    document.documentElement.style.setProperty('--vh', `${innerHeight.value}px`);
+});
+
 onMounted(() => {
     innerHeight.value = window.innerHeight;
-    document.documentElement.style.setProperty('--vh', `${innerHeight.value}px`);
 })
 
 </script>
