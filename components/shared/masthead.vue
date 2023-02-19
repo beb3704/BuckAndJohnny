@@ -1,6 +1,8 @@
 <template>
     <section :class="`h-[calc(var(--vh)-64px)] md:h-screen`">
-        {{ innerHeight }}
+        <ClientOnly>
+            <SharedSetmobilevh></SharedSetmobilevh>
+        </ClientOnly>
         <BiscayneMasthead v-if="appConfig.appStyle === AppStyles.Biscayne"></BiscayneMasthead>
 
         <MarlinMasthead v-if="appConfig.appStyle === AppStyles.Marlin"></MarlinMasthead>
@@ -13,15 +15,4 @@
 <script setup lang="ts">
 import { AppStyles } from '~~/models/appstyles';
 const appConfig = useAppConfig();
-const innerHeight = ref(0);
-
-
-watchEffect(() => {
-    document.documentElement.style.setProperty('--vh', `${innerHeight.value}px`);
-});
-
-onMounted(() => {
-    innerHeight.value = window.innerHeight;
-})
-
 </script>
