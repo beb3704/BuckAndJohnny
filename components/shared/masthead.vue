@@ -1,5 +1,5 @@
 <template>
-    <section :style="classes()">
+    <section :style="style">
         <BiscayneMasthead v-if="appConfig.appStyle === AppStyles.Biscayne"></BiscayneMasthead>
 
         <MarlinMasthead v-if="appConfig.appStyle === AppStyles.Marlin"></MarlinMasthead>
@@ -13,19 +13,13 @@
 import { AppStyles } from '~~/models/appstyles';
 const appConfig = useAppConfig();
 
-const innerHeight = ref(0);
-const innerWidth = ref(0);
+const style = ref("");
 
 onMounted(() => {
-    innerHeight.value = window.innerHeight;
-    innerWidth.value = window.innerWidth;
-})
-
-function classes() {
-    if (innerWidth.value <= 640) {
-        return `height:${innerHeight.value - 64}px`
+    if (window.innerWidth <= 640) {
+        style.value = `height:${window.innerHeight - 64}px`
     } else {
-        return `height:${innerHeight.value}px`
+        style.value = `height:${window.innerHeight}px`
     }
-}
+})
 </script>
