@@ -1,7 +1,7 @@
 <template>
     <div class="bg-[#EDEDED]">
-        <BiscayneSubhead title="Blogs"></BiscayneSubhead>
-        <div class="lg:p-10 max-w-5xl m-auto">
+        <SharedSubhead title="Blogs"></SharedSubhead>
+        <div class="lg:p-10 max-w-5xl m-auto p-4">
             <NuxtImg v-if="blog" :src="blog.imageUrl" width="700" height="400" format="webp"
                 sizes="sm:100vw md:100vw lg:50vw" quality="70" class="object-cover m-auto w-full h-60 md:h-72 lg:h-96"
                 alt="blog image">
@@ -14,7 +14,8 @@
     </div>
 </template>
 
-<script setup lang="ts">import appConfig from '~~/app.config';
+<script setup lang="ts">
+import appConfig from '~~/app.config';
 import { Blog } from '~~/models/blog';
 
 const route = useRoute();

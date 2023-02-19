@@ -1,19 +1,17 @@
 <template>
-    <section class="">
+    <section>
+        <SharedSubhead title="Contact"></SharedSubhead>
 
-        <MarlinSubhead title="Contact">
-        </MarlinSubhead>
-        <div class="max-w-6xl m-auto lg:p-20 py-4">
+        <div class="max-w-6xl m-auto lg:p-20 p-4">
             <div class="grid lg:grid-cols-[1fr_2fr]">
                 <div class="lg:mr-10 shadow-lg text-center grid grid-rows-[min-content_2fr]">
                     <div class="bg-backgroundDark uppercase text-xl text-textLight p-4">Location</div>
                     <div class="grid items-center p-10 gap-10">
                         <div>
                             <h6 class="text-titles text-xl">PHONE</h6>
-                            <a :href="`tel:${appConfig.contact.phone}`"
-                                class="uppercase block text-xl  text-subTitles">{{
-                                    appConfig.contact.phone.replaceAll('-', '.')
-                                }}
+                            <a :href="`tel:${appConfig.contact.phone}`" class="uppercase block text-xl  text-subTitles">{{
+                                appConfig.contact.phone.replaceAll('-', '.')
+                            }}
                             </a>
                         </div>
                         <div>
@@ -30,8 +28,8 @@
                         </div>
                     </div>
                     <!-- <div>
-                            <h6 class="mt-6">HOURS</h6> 
-                        </div> -->
+                                                <h6 class="mt-6">HOURS</h6> 
+                                            </div> -->
                 </div>
 
                 <div class="FormWrapper flex flex-col relative shadow-lg lg:mx-0 mt-4 lg:mt-0 bg-white">
@@ -111,8 +109,6 @@
 
 
     </section>
-
-
 </template>
 <script  setup lang="ts">
 import { VueReCaptcha, useReCaptcha } from 'vue-recaptcha-v3';

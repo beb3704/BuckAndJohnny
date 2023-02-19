@@ -1,7 +1,7 @@
 <template>
     <section>
-        <MarlinSubhead title="Blogs">
-        </MarlinSubhead>
+        <SharedSubhead title="Blogs"></SharedSubhead>
+
         <SharedBlog v-if="blogs" :blogs="blogs"></SharedBlog>
     </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <nav v-bind:class="`hidden  ${subHeader ? 'lg:flex justify-end' : 'lg:grid'}`">
+    <nav v-bind:class="`hidden  ${subHeader ? 'md:grid lg:grid-flow-col' : 'md:grid'}`">
         <NuxtLink v-for="link in appConfig.navigationLinks" :to="link.url"
             class="text-xl uppercase font-bold text-mastheadNavLinks mb-2 mx-2 font-primary">
             {{ link.name }}</NuxtLink>

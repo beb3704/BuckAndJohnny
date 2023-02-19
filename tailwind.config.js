@@ -13,9 +13,9 @@ module.exports = {
   theme: {
     colors:{
       //masthead/subheaders
-      'mastheadTitle':'#26F3B8',
-      'mastheadNavLinks':'#26F3B8',
-      'subHeaderTitle':'#26F3B8',
+      'mastheadTitle':'#fff',
+      'mastheadNavLinks':'#0D303A',
+      'subHeaderTitle':'#0D303A',
 
       //general
       'textLight':'#fff',
@@ -23,14 +23,21 @@ module.exports = {
       'backgroundDark':'#1B283C',
       'accent':'#FBD551',
 
-      'buttonColor':'#1F3D47',
-      'buttonBackground': '#26F3B8',
+    
+      'buttonColor':'#2D6166',
+      'buttonBackground': '#fff',
       
       //components
       'titles':'#3769B3',
       'subTitles':'#2988C9',
       'bodyCopy':'#304555',
-      'bulletBackground':'#d3d3d3'
+      'bulletBackground':'#d3d3d3',
+
+      //mobile
+      'navBackgroundDark':"#9EEDF3",
+      'navBackgroundLight':"#A5ECF5",
+      'navIconColor':"#2C676E",
+      'navTextLinks': "#2C676E"
     },
 
     //When changing the font here, you also need to change it in the nuxt.config.ts
@@ -41,12 +48,34 @@ module.exports = {
     extend: {
       animation:{
         fadeIn: 'fadeIn 4s ease-in-out',
+        smallBounceUp:'bounceUp 1s ease-in-out infinite',
+        smallBounceDown:'bounceDown 10s ease-in-out infinite'
       },
       
       keyframes: theme => ({
         fadeIn:{
           '0%':{opacity:0},
           '100%':{opacity:1}
+        },
+        bounceUp:{
+          '0%, 100%':{
+            transform:"translateY(5%)",
+            'animation-timing-function': "cubic-bezier(0.8,0,1,1)"
+          },
+          '50%':{
+            transform:"none",
+            'animation-timing-function': "cubic-bezier(0,0,0.2,1)"
+          }
+        },
+        bounceUp:{
+          '0%, 100%':{
+            transform:"translateY(-5%)",
+            'animation-timing-function': "cubic-bezier(0.8,0,1,1)"
+          },
+          '50%':{
+            transform:"none",
+            'animation-timing-function': "cubic-bezier(0,0,0.2,1)"
+          }
         }
       })
     },

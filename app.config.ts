@@ -1,4 +1,4 @@
-import { ButtonStyles } from "./models/buttonstyles";
+import { AppStyles } from "./models/appstyles";
 
 export default defineAppConfig({
     contact: {
@@ -10,7 +10,7 @@ export default defineAppConfig({
             state: "LA"
         }
     },
-    buttonStyle: ButtonStyles.Tortuga,
+    appStyle: AppStyles.Biscayne,
     licenseKey: "e3de63e4-dda4-40fe-bcc8-d62dcbae121f",
     navigationLinks: [
         {
@@ -18,8 +18,8 @@ export default defineAppConfig({
             url: "/"
         },
         {
-            name: "components",
-            url: "/components"
+            name: "Pools & Spas",
+            url: "/pools"
         },
         {
             name: "Contact",
@@ -28,6 +28,10 @@ export default defineAppConfig({
         {
             name: "Blog",
             url: "/blog"
-        }
+        },
+        {
+            name: "components",
+            url: "/components"
+        },
     ]
 })

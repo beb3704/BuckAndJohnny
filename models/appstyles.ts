@@ -1,4 +1,4 @@
-export enum ButtonStyles {
+export enum AppStyles {
     Biscayne = "biscayne",
     Marlin = 'marlin',
     Tortuga = 'tortuga',

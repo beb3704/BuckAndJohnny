@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-[#fff]">
-        <div class="grid max-w-7xl md:gap-10 justify-center lg:grid-cols-2 md:p-5 m-auto">
+    <div class="bg-[#fff] p-4">
+        <div class="grid max-w-7xl md:gap-10 justify-center lg:grid-cols-2 md:p-5 m-auto gap-6">
 
             <article v-for="blog in blogs"
                 class="from-backgroundLight bg-gradient-to-t to-[#fff] relative flex flex-col shadow-md rounded-lg overflow-hidden">

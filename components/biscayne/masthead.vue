@@ -1,11 +1,11 @@
 <template>
-    <div class="h-[90vh] lg:h-screen relative">
+    <div class="h-full relative">
         <div class="z-40 relative grid grid-cols-2 w-full h-full grid-rows-3">
 
-            <BiscayneNavigation class="p-4 justify-self-start self-start"></BiscayneNavigation>
+            <BiscayneNavigation class="p-4 justify-self-start self-start lg:row-start-1"></BiscayneNavigation>
 
             <ElementButton text="build & price a pool" url="components"
-                class="animate-bounce mt-5 mr-1 justify-self-start lg:justify-self-end self-start lg:col-span-1 col-span-full">
+                class="animate-bounce mt-5 mr-1 lg:justify-self-end self-start md:col-span-1 col-span-full justify-self-end">
             </ElementButton>
 
             <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
@@ -27,9 +27,9 @@
 
         <MediaBackgroundimage url="/masthead/background.jpg" alt="background tree" class="z-0"></MediaBackgroundimage>
 
-        <MediaBackgroundvideo class="z-10">
-            <source src="/masthead/video.mp4" type="video/mp4">
-        </MediaBackgroundvideo>
+        <!-- <MediaBackgroundvideo class="z-10">
+                                <source src="/masthead/video.mp4" type="video/mp4">
+                            </MediaBackgroundvideo> -->
 
         <MediaBackgroundimage url="/masthead/backgroundoverlay.png" alt="background tree" class="z-30">
         </MediaBackgroundimage>
