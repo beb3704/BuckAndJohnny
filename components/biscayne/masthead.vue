@@ -9,7 +9,7 @@
             </ElementButton>
 
             <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
-                class="justify-self-center self-center col-span-full w-52 md:w-60 lg:w-80 h-auto">
+                class="justify-self-center self-center col-span-full w-52 md:w-60 lg:w-80 h-36 md:h-40 lg:h52">
             </NuxtImg>
 
             <div class="col-span-full justify-self-center self-end bg-backgroundDark py-3 px-10 lg:py-6 lg:px-30">
@@ -28,8 +28,8 @@
         <MediaBackgroundimage url="/masthead/background.jpg" alt="background tree" class="z-0"></MediaBackgroundimage>
 
         <!-- <MediaBackgroundvideo class="z-10">
-                                <source src="/masthead/video.mp4" type="video/mp4">
-                            </MediaBackgroundvideo> -->
+                                                                                                        <source src="/masthead/video.mp4" type="video/mp4">
+                                                                                                    </MediaBackgroundvideo> -->
 
         <MediaBackgroundimage url="/masthead/backgroundoverlay.png" alt="background tree" class="z-30">
         </MediaBackgroundimage>

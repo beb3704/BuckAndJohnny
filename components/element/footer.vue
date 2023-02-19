@@ -44,15 +44,14 @@
         <div class="col-span-full lg:col-span-1 p-3">
             <div class=" text-accent uppercase mb-1 ">Latest tags</div>
             <ul class=" text-textLight">
-                <li v-for="tag in topTags"
-                    class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent text-sm uppercase">
+                <li v-for="tag in topTags" class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent text-sm uppercase">
                     <NuxtLink :to="`/blog/tag/${tag}`" class="block pl-3 py-1">{{ tag }}</NuxtLink>
                 </li>
             </ul>
         </div>
         <a href="https://www.deepdiveco.com" class="flex justify-between w-full col-span-full">
-            <NuxtImg src="/footer/splashdownfooter.svg" alt="company icon" class="h-10 md:h-14"></NuxtImg>
-            <NuxtImg src="/footer/deepdivefooter.svg" alt="company icon" class="h-10 md:h-14 justify-self-end">
+            <NuxtImg src="/footer/splashdownfooter.svg" alt="company icon" class="w-54 h-10 md:h-14"></NuxtImg>
+            <NuxtImg src="/footer/deepdivefooter.svg" alt="company icon" class="w-54 h-10 md:h-14 justify-self-end">
             </NuxtImg>
         </a>
     </footer>
