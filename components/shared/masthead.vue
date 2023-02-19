@@ -12,10 +12,12 @@
 <script setup lang="ts">
 import { AppStyles } from '~~/models/appstyles';
 const appConfig = useAppConfig();
+const innerHeight = ref(0);
+
 
 onMounted(() => {
-    let vh = window.innerHeight;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    innerHeight.value = window.innerHeight;
+    document.documentElement.style.setProperty('--vh', `${innerHeight.value}px`);
 })
 
 </script>
