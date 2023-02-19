@@ -1,5 +1,5 @@
 <template>
-    <section class="height">
+    <section class="h-[calc(100vh-64px)] md:h-screen">
         <BiscayneMasthead v-if="appConfig.appStyle === AppStyles.Biscayne"></BiscayneMasthead>
 
         <MarlinMasthead v-if="appConfig.appStyle === AppStyles.Marlin"></MarlinMasthead>
