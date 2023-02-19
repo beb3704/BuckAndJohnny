@@ -1,5 +1,5 @@
 <template>
-    <section :style="classes">
+    <section :style="classes()">
         <BiscayneMasthead v-if="appConfig.appStyle === AppStyles.Biscayne"></BiscayneMasthead>
 
         <MarlinMasthead v-if="appConfig.appStyle === AppStyles.Marlin"></MarlinMasthead>
@@ -11,41 +11,21 @@
 
 <script setup lang="ts">
 import { AppStyles } from '~~/models/appstyles';
-
 const appConfig = useAppConfig();
 
 const innerHeight = ref(0);
-const innerWidth = ref(0)
+const innerWidth = ref(0);
 
 onMounted(() => {
-    window.addEventListener('resize', resize)
-
-    setTimeout(() => {
-        innerHeight.value = window.innerHeight;
-        innerWidth.value = window.innerWidth;
-    }, 100);
-
-    nextTick(() => {
-        innerHeight.value = window.innerHeight;
-        innerWidth.value = window.innerWidth;
-    })
-})
-
-onUnmounted(() => {
-    window.removeEventListener('resize', resize);
-})
-
-function resize() {
     innerHeight.value = window.innerHeight;
     innerWidth.value = window.innerWidth;
-}
+})
 
-const classes = computed(() => {
+function classes() {
     if (innerWidth.value <= 640) {
         return `height:${innerHeight.value - 64}px`
     } else {
         return `height:${innerHeight.value}px`
     }
-})
-
+}
 </script>
