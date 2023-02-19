@@ -70,6 +70,10 @@
  
 }
 
+:root{
+  --vh:100vh;
+}
+
 *{
     position: relative;
 }
