@@ -1,10 +1,9 @@
 <template>
     <section>
         <SharedMasthead></SharedMasthead>
-
         <NuxtImg height="280" width="560" src="/lathamlogo.png" alt="Latham Brand Logo" class="m-auto" loading="lazy">
-        </NuxtImg>
 
+        </NuxtImg>
 
         <PrefabCenterblurb class="pt-10 pb-10" title="Family fun and relaxation" sub-title="is just a few clicks away"
             button-text="is just a few clicks away" button-url="https://www.google.com"
