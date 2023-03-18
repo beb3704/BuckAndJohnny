@@ -18,6 +18,8 @@ module.exports = {
       'subHeaderTitle':'#0D303A',
 
       //general
+      'lightRed': '#BB2332',
+      'darkRed' : '#7C1125',
       'textLight':'#fff',
       'backgroundLight':'#202F46',
       'backgroundDark':'#1B283C',
@@ -42,8 +44,8 @@ module.exports = {
 
     //When changing the font here, you also need to change it in the nuxt.config.ts
     fontFamily:{
-      'primary':['Open Sans'],
-      'sans': ['Lato', ...defaultTheme.fontFamily.sans],
+      'primary':['Jost'],
+      'sans': ['Jost', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       animation:{

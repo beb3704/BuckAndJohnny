@@ -31,8 +31,7 @@ export default defineNuxtConfig({
     googleFonts: {
         //When changing the font here, you also need to change it in the tailwind.config.js
         families: {
-            'Sassy Frass': [400, 700],
-            'Open Sans': [400, 700],
+            'Jost': [400, 700]
         }
     },
     pwa: {

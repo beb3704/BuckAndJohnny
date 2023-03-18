@@ -18,20 +18,16 @@ export default defineAppConfig({
             url: "/"
         },
         {
-            name: "Pools & Spas",
-            url: "/pools"
+            name: "Entertainment",
+            url: "/Entertainment"
         },
         {
-            name: "Contact",
-            url: "/contact"
+            name: "Special Events",
+            url: "/special-events"
         },
         {
-            name: "Blog",
-            url: "/blog"
-        },
-        {
-            name: "components",
-            url: "/components"
-        },
+            name: "Community & Media",
+            url: "/community-and-media"
+        }
     ]
 })
