@@ -19,7 +19,7 @@ export default defineAppConfig({
         },
         {
             name: "Entertainment",
-            url: "/Entertainment"
+            url: "/zydeco-breakfast"
         },
         {
             name: "Special Events",

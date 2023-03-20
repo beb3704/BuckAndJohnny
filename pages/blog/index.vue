@@ -1,7 +1,9 @@
 <template>
     <section>
-        <SharedSubhead title="Blogs"></SharedSubhead>
+        <Bnjnav></Bnjnav>
+        <SubHeader title="Blog" sub-title="All the latest news">
 
+        </SubHeader>
         <SharedBlog v-if="blogs" :blogs="blogs"></SharedBlog>
     </section>
 </template>

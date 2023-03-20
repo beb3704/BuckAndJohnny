@@ -1,6 +1,12 @@
 <template>
     <div class="bg-[#EDEDED]">
-        <SharedSubhead title="Blogs"></SharedSubhead>
+
+        <Bnjnav></Bnjnav>
+        <SubHeader :title="blog?.title" sub-title="">
+
+
+        </SubHeader>
+
         <div class="lg:p-10 max-w-5xl m-auto p-4">
             <NuxtImg v-if="blog" :src="blog.imageUrl" width="700" height="400" format="webp"
                 sizes="sm:100vw md:100vw lg:50vw" quality="70" class="object-cover m-auto w-full h-60 md:h-72 lg:h-96"

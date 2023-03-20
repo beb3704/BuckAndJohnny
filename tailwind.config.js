@@ -21,9 +21,9 @@ module.exports = {
       'lightRed': '#BB2332',
       'darkRed' : '#7C1125',
       'textLight':'#fff',
-      'backgroundLight':'#202F46',
+      'backgroundLight':'#000',
       'backgroundDark':'#1B283C',
-      'accent':'#FBD551',
+      'accent':'#ff0000',
 
     
       'buttonColor':'#2D6166',

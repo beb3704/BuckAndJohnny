@@ -49,10 +49,8 @@
                 </li>
             </ul>
         </div>
-        <a href="https://www.deepdiveco.com" class="flex justify-between w-full col-span-full">
-            <NuxtImg src="/footer/splashdownfooter.svg" alt="company icon" class="w-54 h-10 md:h-14"></NuxtImg>
-            <NuxtImg src="/footer/deepdivefooter.svg" alt="company icon" class="w-54 h-10 md:h-14 justify-self-end">
-            </NuxtImg>
+        <a href="https://www.theroomisred.com" class="bg-[#000] text-[#ff0000] m-auto col-span-full p-4">
+            Web Design by Red Room
         </a>
     </footer>
 </template>

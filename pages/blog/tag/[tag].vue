@@ -1,6 +1,8 @@
 <template>
     <div>
-        <SharedSubhead title="Blogs"></SharedSubhead>
+        <Bnjnav></Bnjnav>
+        <SubHeader title="Blogs" sub-title="All the latest news"></SubHeader>
+
         <SharedBlog v-if="blogs" :blogs="blogs"></SharedBlog>
     </div>
 </template>
