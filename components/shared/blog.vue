@@ -4,7 +4,8 @@
 
             <article v-for="blog in blogs"
                 class="from-backgroundLight bg-gradient-to-t to-[#fff] relative flex flex-col shadow-md rounded-lg overflow-hidden">
-                <NuxtImg :src="blog.imgSrc" format="webp" width="400px" height="250px" sizes="sm:400px" quality="70"
+                <NuxtImg v-if="blog && blog.imgSrc" :src="blog.imgSrc" format="webp" width="400px" height="250px"
+                    sizes="sm:400px" quality="70"
                     class="object-cover object-bottom w-full h-72 rounded-t-lg  relative z-0 clip" loading="lazy"
                     alt="blog image">
                 </NuxtImg>
@@ -15,8 +16,7 @@
                                 <div class="p-4  font-bold text-titles">
                                     {{ blog.title }}
                                 </div>
-                                <div class="px-4 pb-8  text-justify text-bodyCopy text-sm">
-                                    {{ blog.excerpt }}
+                                <div class="px-4 pb-8  text-justify text-bodyCopy text-sm" v-html="blog.excerpt">
                                 </div>
                             </div>
                         </div>

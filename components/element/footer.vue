@@ -37,7 +37,7 @@
             <ul class=" text-textLight">
                 <li v-for="blog in latestBlogs"
                     class="mb-2 p-1 bg-backgroundDark border-l-4 border-accent uppercase text-sm">
-                    <NuxtLink :to="`/blog/${blog.seoSlug}`" class="block pl-3 py-1">{{ blog.title }}</NuxtLink>
+                    <NuxtLink :to="`/blog/${blog.slug}`" class="block pl-3 py-1">{{ blog.title }}</NuxtLink>
                 </li>
             </ul>
         </div>
@@ -62,5 +62,5 @@ import { Blog } from '~~/models/blog';
 const showModal = ref(false);
 const appConfig = useAppConfig()
 const { data: latestBlogs } = await useFetch<Array<Blog>>(`https://rrapibeta.azurewebsites.net/api/public/posts/latestposts/${appConfig.licenseKey}`)
-const { data: topTags } = await useFetch<Array<string>>(`https://rrapibeta.azurewebsites.net/api/public/posts/toptags/${appConfig.licenseKey}/toptags`)
+const { data: topTags } = await useFetch<Array<string>>(`https://rrapibeta.azurewebsites.net/api/public/posts/toptags/${appConfig.licenseKey}`)
 </script>

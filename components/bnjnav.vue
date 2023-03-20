@@ -20,7 +20,7 @@
             <div class="flex lg:hidden">
                 <div class="bg-[#fff] mr-9 px-3">
                     <div class="clip-right bg-[#fff]"></div>
-                    <NuxtLink to="menu" class="p-1 uppercase text-darkRed font-bold block text-center">
+                    <NuxtLink to="/menu" class="p-1 uppercase text-darkRed font-bold block text-center">
                         Menu
                     </NuxtLink>
                 </div>
@@ -43,7 +43,7 @@
             <div class="flex">
                 <div class="bg-lightRed mr-9 px-3 flex justify-center items-center">
                     <div class="clip-right bg-lightRed"></div>
-                    <NuxtLink to="menu"
+                    <NuxtLink to="/menu"
                         class="p-1 uppercase text-[#fff] font-bold block text-center text-sm tracking-widest">
                         Menu
                     </NuxtLink>

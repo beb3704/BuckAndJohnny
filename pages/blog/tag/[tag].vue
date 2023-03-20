@@ -26,6 +26,6 @@ const route = useRoute();
 let tag = route.params.tag as string;
 const blogs = reactive(returnedBlogs);
 if (blogs.value) {
-    blogs.value = blogs.value.filter((v) => v.tags.includes(tag));
+    blogs.value = blogs.value.filter((v) => v.tags.map(z => z.name).includes(tag));
 }
 </script>
