@@ -11,6 +11,7 @@
         </nav>
 
         <div class="p-3">
+
             <div class="text-accent uppercase mb-1 ">Call us!</div>
             <a :href="`tel:${appConfig.contact.phone}`" class="uppercase block mb-2  text-textLight">{{
                 appConfig.contact.phone.replaceAll('-', '.')
