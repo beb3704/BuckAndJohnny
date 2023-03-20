@@ -22,5 +22,5 @@ useSeoMeta({
 
 const appConfig = useAppConfig()
 
-const { data: blogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)
+const { data: blogs } = await useFetch<Array<Blog>>(`https://rrapibeta.azurewebsites.net/api/public/posts/Getposts/${appConfig.licenseKey}`)
 </script>

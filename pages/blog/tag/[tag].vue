@@ -21,7 +21,7 @@ useSeoMeta({
     ogSiteName: 'Pools & Spas'
 });
 const appConfig = useAppConfig();
-const { data: returnedBlogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}`)
+const { data: returnedBlogs } = await useFetch<Array<Blog>>(`https://rrapibeta.azurewebsites.net/api/public/posts/Getposts/${appConfig.licenseKey}`)
 const route = useRoute();
 let tag = route.params.tag as string;
 const blogs = reactive(returnedBlogs);

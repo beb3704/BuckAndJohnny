@@ -60,6 +60,6 @@ import { Blog } from '~~/models/blog';
 
 const showModal = ref(false);
 const appConfig = useAppConfig()
-const { data: latestBlogs } = await useFetch<Array<Blog>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}/latestblogs`)
-const { data: topTags } = await useFetch<Array<string>>(`https://splashdownadminportal.azurewebsites.net/blogs/${appConfig.licenseKey}/toptags`)
+const { data: latestBlogs } = await useFetch<Array<Blog>>(`https://rrapibeta.azurewebsites.net/api/public/posts/latestposts/${appConfig.licenseKey}`)
+const { data: topTags } = await useFetch<Array<string>>(`https://rrapibeta.azurewebsites.net/api/public/posts/toptags/${appConfig.licenseKey}/toptags`)
 </script>

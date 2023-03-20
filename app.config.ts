@@ -11,7 +11,7 @@ export default defineAppConfig({
         }
     },
     appStyle: AppStyles.Biscayne,
-    licenseKey: "e3de63e4-dda4-40fe-bcc8-d62dcbae121f",
+    licenseKey: "41682fc0-bf42-43fd-8ed3-2c7498401939",
     navigationLinks: [
         {
             name: "Home",

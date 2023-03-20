@@ -1,8 +1,18 @@
 export interface Blog {
-    title: string;
-    imageUrl: string;
-    excerpt: string;
-    body: string;
-    seoSlug: string;
-    tags: string;
+    id: number
+    licenseId: number
+    title: string
+    slug: string
+    selectedPublishOption: string
+    publishDate: string
+    excerpt: string
+    currentStatus: any
+    imgSrc: string
+    imgSrcAltText: string
+    tags: Tag[]
+    body: string
+}
+
+export interface Tag {
+    name: string
 }
