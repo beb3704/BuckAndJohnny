@@ -1,7 +1,7 @@
 <template>
     <div>
         <Bnjnav></Bnjnav>
-        <SubHeader title="world famous zydeco breakfast" sub-title="2-step with us every saturday at 8:00am">
+        <SubHeader title="live music" sub-title="A cool subtitle">
             <div class="text-textLight grid justify-center p-2 gap-10 m-auto" style="width:375px">
 
                 <div class="bg-lightRed py-2 px-8 mt-3">
@@ -36,8 +36,9 @@
         <div class="p-4 text-4xl text-darkRed uppercase text-center lg:text-5xl">
             Music Schedule
         </div>
+
         <ClientOnly>
-            <Zydecoevents></Zydecoevents>
+            <LazyLivemusicevents></LazyLivemusicevents>
         </ClientOnly>
     </div>
 </template>

@@ -73,7 +73,7 @@
 
                     <div class="bg-darkRed py-2">
                         <div class="clip-left bg-darkRed"></div>
-                        <NuxtLink to="/"
+                        <NuxtLink to="/live-music"
                             class="flex items-center font-bold text-sm justify-center h-full w-full text-center -ml-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 mr-1">
