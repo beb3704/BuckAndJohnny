@@ -3,15 +3,10 @@
     <Bnjnav></Bnjnav>
     <div class="h-20"></div>
     <div class="max-w-6xl m-auto">
-        <div class="bg-lightRed text-[#fff] uppercase p-2 px-4 text-center text-sm col-span-full mb-6 bigClip">Weekly lunch
-            special:
-            $20
-            silver
-            medallion
-            ribeyes +
-            choice of
-            side
-        </div>
+
+        <ClientOnly>
+            <Alert></Alert>
+        </ClientOnly>
 
         <div class="md:grid-cols-2 grid md:px-2 lg:px-10 gap-6 pb-20">
             <Imagebox url="/zydecobreakfeast.jpg" title="Zydeo Breakfast" alt="People Dancing"
