@@ -2,9 +2,9 @@ import { AppStyles } from "./models/appstyles";
 
 export default defineAppConfig({
     contact: {
-        phone: '337-366-4033',
+        phone: '337-442-6630',
         address: {
-            street: "1042 Hammock Lane",
+            street: "100 Berard St.",
             city: 'Breaux Bridge',
             zip: '70517',
             state: "LA"
@@ -19,7 +19,7 @@ export default defineAppConfig({
         },
         {
             name: "Entertainment",
-            url: "/zydeco-breakfast"
+            url: "/entertainment"
         },
         {
             name: "Special Events",
@@ -27,7 +27,7 @@ export default defineAppConfig({
         },
         {
             name: "Community & Media",
-            url: "/community-and-media"
+            url: "/blog"
         }
     ]
 })
