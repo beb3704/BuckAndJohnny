@@ -1,6 +1,6 @@
 <template>
     <ClientOnly>
-        <div class="grid md:grid-cols-2 max-w-5xl m-auto gap-4 pb-10 pt-6 p-2">
+        <div class="grid md:grid-cols-2 max-w-5xl m-auto gap-4 pb-10 pt-6 p-2 cursor-pointer">
             <div class="border-8 border-[#E5E6E7] grid grid-cols-[min-content,1fr]" v-for="event in events"
                 v-on:click="openCalendar(event)">
                 <div class="bg-lightRed px-4 py-2 text-center text-[#fff] uppercase w-24">

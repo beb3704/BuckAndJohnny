@@ -37,15 +37,4 @@ useSeoMeta({
 });
 </script>
 
-<style scoped>
-h3,
-h1,
-h2,
-h4 {
-    @apply text-titles font-bold
-}
-
-* {
-    @apply text-bodyCopy
-}
-</style>
+<style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="h-72 hoverBg overflow-hidden flex flex-col justify-between md:border-4">
+    <div class="h-72 hoverBg overflow-hidden flex flex-col justify-between md:border-8">
         <MediaBackgroundimage v-if="url && alt" class="BackgroundSettings transition-all duration-1000" :alt="alt"
             :url="url">
         </MediaBackgroundimage>

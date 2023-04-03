@@ -1,37 +1,15 @@
 <template>
   <div>
     <Bnjnav></Bnjnav>
-    <SubHeader
-      title="world famous zydeco breakfast"
-      sub-title="2-step with us every saturday at 8:00am"
-    >
-      <div
-        class="text-textLight grid justify-center p-2 gap-10 m-auto"
-        style="width: 375px"
-      >
+    <SubHeader title="world famous zydeco breakfast" sub-title="2-step with us every saturday at 8:00am">
+      <div class="text-textLight grid justify-center p-2 gap-10 m-auto" style="width: 375px">
         <div class="bg-lightRed py-2 px-8 mt-3">
-          <NuxtLink
-            to="/"
-            class="flex items-center font-bold text-sm justify-center h-full w-full text-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4 mr-1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-              />
+          <NuxtLink to="/" class="flex items-center font-bold text-sm justify-center h-full w-full text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
             </svg>
             <div>GET DIRECTIONS</div>
           </NuxtLink>
@@ -48,20 +26,82 @@
       </h5>
     </div>
 
-    <div class="p-4 text-sm md:text-2xl uppercase text-center">
+    <div class="p-4 md:text-3xl uppercase text-center">
       <div class="py-1">every saturday doors open at 8:00am</div>
       <div class="py-1">Music from 8:30-11:30am</div>
       <div class="py-1">special breakfast menu served until 11:00am</div>
     </div>
     <br /><br />
-    <div class="p-1 text-4xl text-darkRed uppercase text-center lg:text-5xl">
+    <div class="p-1 text-6xl text-darkRed uppercase text-center lg:text-5xl">
       Music Schedule
     </div>
-    <div class="p-2 text-2xl text-black uppercase text-center lg:text-2xl">
+    <div class="p-2 text-3xl text-black uppercase text-center lg:text-2xl">
       Click the Event to add to calendar
     </div>
     <ClientOnly>
       <Zydecoevents></Zydecoevents>
     </ClientOnly>
+
+
+    <div class="bg-[#000] bg-opacity-10 p-2 md:p-8 md:pt-12 md:pb-12">
+      <div class="max-w-7xl m-auto grid md:grid-cols-2 gap-5">
+        <Imagebox url="/merch.jpg" title="Merchandise" alt="People Dancing" sub-title="grab some cajun swag">
+          <div class="text-textLight grid grid-cols-2 p-2 gap-10">
+            <div class="bg-lightRed py-1">
+              <div class="clip-right bg-lightRed"></div>
+              <NuxtLink to="/" class="flex items-center font-bold text-sm justify-center h-full w-full text-center py-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.02 12.39" class="h-4 w-4 mr-2">
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_2-2" data-name="Layer 2">
+                      <polygon class="cls-1"
+                        points="6.51 10.27 2.49 12.39 3.26 7.91 0 4.73 4.5 4.08 6.51 0 8.53 4.08 13.03 4.73 9.77 7.91 10.54 12.39 6.51 10.27" />
+                    </g>
+                  </g>
+                </svg>
+                <div class="mt-1">COMING SOON!</div>
+              </NuxtLink>
+            </div>
+          </div>
+        </Imagebox>
+
+        <Imagebox url="/menu.jpg" title="Menu" alt="Food" sub-title="Award-Winning Cuisine">
+          <div class="text-textLight grid grid-cols-2 p-2 gap-10">
+            <div class="bg-lightRed py-1">
+              <div class="clip-right bg-lightRed"></div>
+              <NuxtLink to="menu"
+                class="flex items-center font-bold text-sm justify-center h-full w-full text-center py-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.26 21.82" class="h-4 w-4 mr-2">
+                  <defs></defs>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_2-2" data-name="Layer 2">
+                      <rect class="cls-1" x="4.49" y="2.6" width="11.29" height="16.62"
+                        transform="translate(-2.91 3.72) rotate(-18.26)" />
+                      <rect class="cls-1" x="1.82" y="5.27" width="16.62" height="11.29"
+                        transform="translate(-2.08 19.42) rotate(-82)" />
+                      <rect class="cls-1" x="1.82" y="5.27" width="16.62" height="11.29"
+                        transform="translate(-4.54 13.45) rotate(-56.95)" />
+                    </g>
+                  </g>
+                </svg>
+                <div>VIEW OUR MENU</div>
+              </NuxtLink>
+            </div>
+          </div>
+        </Imagebox>
+      </div>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.cls-1 {
+  fill: #fff;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 1.25px;
+}
+
+.cls-1 {
+  fill: #fff;
+}
+</style>

@@ -30,7 +30,7 @@ module.exports = {
       'buttonBackground': '#fff',
       
       //components
-      'titles':'#3769B3',
+      'titles':'#000',
       'subTitles':'#2988C9',
       'bodyCopy':'#304555',
       'bulletBackground':'#d3d3d3',
