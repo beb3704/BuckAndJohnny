@@ -148,7 +148,7 @@
           <div class="bg-lightRed py-1">
             <div class="clip-right bg-lightRed"></div>
             <NuxtLink
-              to="/"
+              to="menu"
               class="flex items-center font-bold text-sm justify-center h-full w-full text-center py-1"
             >
               <svg
@@ -202,7 +202,7 @@
           <div class="bg-lightRed py-1">
             <div class="clip-right bg-lightRed"></div>
             <NuxtLink
-              to="/"
+              to="https://buckandjohnnys.hrpos.heartland.us/menu"
               class="flex items-center font-bold text-sm justify-center h-full w-full text-center py-1"
             >
               <svg
@@ -256,7 +256,7 @@
           <div class="bg-lightRed py-1">
             <div class="clip-right bg-lightRed"></div>
             <NuxtLink
-              to="/"
+              to="special-events"
               class="flex items-center font-bold text-sm justify-center h-full w-full text-center py-1"
             >
               <svg
@@ -306,7 +306,7 @@
                   </g>
                 </g>
               </svg>
-              <div class="mt-1">SHOP ONLINE</div>
+              <div class="mt-1">COMING SOON!</div>
             </NuxtLink>
           </div>
         </div>
