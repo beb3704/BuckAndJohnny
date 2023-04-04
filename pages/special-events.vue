@@ -94,28 +94,32 @@
  -->
     <div class="grid lg:grid-cols-2 md:grid-cols-2 m-auto max-w-6xl">
       <div
-        class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
+        class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start text-center"
       >
         <div class="p-2 uppercase font-bold">
-          An Elegantly Appointed Space | accommodates 400
+          <img src="glassroom.jpg" width="100%" /><br />
+          <h2>The Glass Room</h2>
+          <span>An Elegantly Appointed Space | accommodates 400</span>
         </div>
         <div class="p-2 col-span-full">
-          We welcome you to our best kept secret. Imagine… exposed brick walls,
-          a high ceiling and wall of glass windows from the ceiling to floor to
-          encompass your special event. All that’s missing is your personal
-          touch. Weddings, baby showers, birthday and anniversary parties,
-          office parties, meetings, and banquets are celebrated weekly. Equipped
-          with flat-screen televisions and two full bars. We can handle all of
-          your event needs. Our amazing staff will customize your event details
-          to your request and provide top-shelf service throughout your event.
+          Imagine… exposed brick walls, a high ceiling and wall of windows from
+          the ceiling to floor to encompass your special event. All that’s
+          missing is your personal touch. Weddings, baby showers, birthday and
+          anniversary parties, office parties, meetings, and banquets are
+          celebrated weekly. Equipped with flat-screen televisions and two full
+          bars. Our amazing staff will customize your event per request and
+          provide top-shelf service throughout.
         </div>
       </div>
 
       <div
-        class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
+        class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start text-center"
       >
         <div class="p-2 uppercase font-bold">
-          A more casual event space | accommodates 50
+          <img src="upstairs.jpg" width="100%" /><br />
+          <h2>Upstairs</h2>
+
+          <span>A more casual event space | accommodates 50</span>
         </div>
         <div class="p-2 col-span-full">
           Upstairs at Buck and Johnny's has been host to a long list of event
@@ -128,7 +132,7 @@
         </div>
       </div>
     </div>
-
+    <!-------FORM IN HERE-->
     <br />
     <br />
     <br />
@@ -146,5 +150,14 @@
 
 .cls-1 {
   fill: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+span {
+  text-align: center;
 }
 </style>
