@@ -15,7 +15,7 @@ useSeoMeta({
   description: "All Blogs",
   ogDescription: "All Blogs",
   ogImage: "/logo.png",
-  ogSiteName: "Pools & Spas",
+  ogSiteName: "Buck & Johnnys Restaurant",
 });
 
 const appConfig = useAppConfig();
