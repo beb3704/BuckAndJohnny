@@ -1,7 +1,6 @@
 <template>
     <section>
-        <SharedSubhead title="Contact"></SharedSubhead>
-
+        <Bnjnav></Bnjnav>
         <div class="max-w-6xl m-auto lg:p-20 p-4">
             <div class="grid lg:grid-cols-[1fr_2fr]">
                 <div class="lg:mr-10 shadow-lg text-center grid grid-rows-[min-content_2fr]">
