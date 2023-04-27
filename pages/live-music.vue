@@ -14,7 +14,7 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewBox="0 0 24 24" 
+              viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
               class="w-4 h-4 mr-1"
@@ -40,9 +40,6 @@
       <h4 class="text-[#fff] uppercase text-center text-2xl font-bold">
         No Cover Charge for Nightly Music
       </h4>
-      <h5 class="text-[#929497] uppercase text-center text-sm tracking-widest">
-        first come, first served, no reservations
-      </h5>
     </div>
 
     <div class="p-4 text-sm md:text-2xl uppercase text-center">
