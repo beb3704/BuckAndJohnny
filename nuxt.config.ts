@@ -36,9 +36,9 @@ export default defineNuxtConfig({
     },
     pwa: {
         meta: {
-            name: "Pools & Spas",
+            name: "Buck & Johnnys Restaurant",
             author: "Ike Melancon",
-            description: "Pools & Spas",
+            description: "Buck & Johnnys Restaurant",
         }
     },
     delayHydration: { mode: false },

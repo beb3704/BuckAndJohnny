@@ -2,7 +2,11 @@
   <div>
     <MediaBackgroundimage alt="Delicious Pizza" url="/pizzabg.jpg" :dark-overlay="true"></MediaBackgroundimage>
     <Bnjnav></Bnjnav>
-    <div class="h-20"></div>
+    <div class="grid justify-center pb-6 pt-4">
+      <NuxtImg format="webp" quality="100" sizes="sm:200px md:300px lg:350px" src="/logo.png" alt="logo"
+        class="justify-self-center self-center col-span-full w-52 md:w-60 lg:w-80 h-auto">
+      </NuxtImg>
+    </div>
     <div class="max-w-6xl m-auto">
       <ClientOnly>
         <Alert></Alert>
