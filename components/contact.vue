@@ -4,37 +4,37 @@
             <div class="lg:px-3" key="1" v-if="!data.submitted || data.submitting">
                 <div class="grid lg:grid-cols-2">
                     <div class="m-2">
-                        <input v-bind="data.name"
+                        <input v-model="data.name"
                             class="shadow appearance-none text-bodyCopy  bg-[#E6E7E8]  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Full Name" />
                     </div>
 
                     <div class="m-2">
-                        <input v-bind="data.date"
+                        <input v-model="data.date"
                             class="shadow appearance-none text-bodyCopy  bg-[#E6E7E8]  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Date Requested" />
                     </div>
 
                     <div class="m-2">
-                        <input v-bind="data.phone"
+                        <input v-model="data.phone"
                             class="shadow appearance-none text-bodyCopy  bg-[#E6E7E8]  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Phone" />
                     </div>
 
                     <div class="m-2">
-                        <input v-bind="data.numberOfguests"
+                        <input v-model="data.numberOfguests"
                             class="shadow appearance-none text-bodyCopy bg-[#E6E7E8]  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Number of Guests" />
                     </div>
 
                     <div class="m-2">
-                        <input v-bind="data.email"
+                        <input v-model="data.email"
                             class="shadow appearance-none text-bodyCopy l bg-[#E6E7E8]  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="E-Mail" />
                     </div>
 
                     <div class="m-2">
-                        <input v-bind="data.description"
+                        <input v-model="data.description"
                             class="shadow appearance-none text-bodyCopy  bg-[#E6E7E8]  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Brief Description of your Gathering" />
                     </div>
@@ -63,16 +63,17 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { VueReCaptcha, useReCaptcha } from 'vue-recaptcha-v3';
 const { vueApp } = useNuxtApp();
 vueApp.use(VueReCaptcha, {
-    siteKey: '6LdBiD0aAAAAABbNN4G57tXCDHu-lpIzklEP5ikh',
+    siteKey: '6LcbLK8UAAAAAMlZEKJF2cVWoclXn2mjL9o5aJ1Z',
     loaderOptions: {
         autoHideBadge: true,
     },
 });
 
+let recaptcha = {} as any;
 
 const appConfig = useAppConfig();
 const data = reactive({
@@ -92,6 +93,7 @@ async function submit() {
     let postObject = {
         formName: "Quick Contact",
         name: data.name,
+        emailsOverride: ["bucknjohnnys.rhondabranch@gmail.com"],
         reCaptchaKey: componentToken,
         dictionary: {
             Name: data.name,
@@ -104,7 +106,7 @@ async function submit() {
         licenseKey: appConfig.licenseKey,
     };
 
-    const response = await useFetch(`https://splashdownadminportal.azurewebsites.net/contactform`, {
+    const response = await useFetch(`https://rrapibeta.azurewebsites.net/api/email/contactform`, {
         method: "POST",
         body: postObject,
         headers: {
