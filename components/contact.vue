@@ -93,7 +93,7 @@ async function submit() {
     let postObject = {
         formName: "Quick Contact",
         name: data.name,
-        emailsOverride: ["bucknjohnnys.rhondabranch@gmail.com"],
+        emailsOverride: ["rhondabbranch@gmail.com"],
         reCaptchaKey: componentToken,
         dictionary: {
             Name: data.name,
