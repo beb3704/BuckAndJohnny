@@ -39,7 +39,7 @@
           provide top-shelf service throughout.
         </div>
       </div>
-      <a href="2023 Glassroom Package.pdf" download>
+      <a href="2023-glassroom.pdf" download>
         <NuxtImg
           format="webp"
           quality="70"
