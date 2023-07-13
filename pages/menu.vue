@@ -84,8 +84,20 @@
     </SubHeader>
 
     <div class="bg-[#000]">
+      <div
+        class="flex m-auto py-3 p-2 col-span-full grid lg:grid-cols-3 md:grid-cols-1 m-auto max-w-6xl"
+      >
+        <a href="/LightMenu.pdf"><div class="MenuButtons">Light menu</div></a>
+        <a href="/DessertMenu.pdf"
+          ><div class="MenuButtons">Dessert Menu</div></a
+        >
+        <a href="/ZydecoMenu.pdf"
+          ><div class="MenuButtons">Zydeco Breakfast</div></a
+        >
+      </div>
+
       <h4 class="text-[#fff] uppercase text-center text-3xl font-bold py-4">
-        Lunch & dinner
+        MAIN Lunch & dinner
       </h4>
     </div>
 
@@ -1235,5 +1247,16 @@
 
 .cls-1 {
   fill: #fff;
+}
+
+.MenuButtons {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  background-color: #333333b3;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border: 2px solid #000;
 }
 </style>
