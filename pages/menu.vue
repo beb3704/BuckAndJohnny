@@ -85,7 +85,7 @@
 
     <div class="bg-[#000]">
       <div
-        class="flex m-auto py-3 p-2 col-span-full grid lg:grid-cols-3 md:grid-cols-1 m-auto max-w-6xl"
+        class="flex m-auto py-3 p-2 col-span-full grid lg:grid-cols-3 md:grid-cols-2 m-auto max-w-6xl"
       >
         <a href="/LightMenu.pdf"><div class="MenuButtons">Light menu</div></a>
         <a href="/DessertMenu.pdf"
@@ -93,6 +93,11 @@
         >
         <a href="/ZydecoMenu.pdf"
           ><div class="MenuButtons">Zydeco Breakfast</div></a
+        >
+        <a href="/TogoMenu.pdf"><div class="MenuButtons">To-Go menu</div></a>
+
+        <a href="/HolidayMenu.pdf"
+          ><div class="MenuButtons Holiday">Holiday Menu : Avail Nov. 1</div></a
         >
       </div>
 
@@ -1258,5 +1263,9 @@
   font-size: 0.8rem;
   padding: 0.5rem;
   border: 2px solid #000;
+}
+
+.Holiday {
+  background-color: #970017;
 }
 </style>
