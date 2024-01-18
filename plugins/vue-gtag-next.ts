@@ -6,5 +6,6 @@ export default defineNuxtPlugin((nuxtApp) => {
       id: 'G-607FMWC0QC'
     }
   })
+  
   trackRouter(useRouter())
 })
