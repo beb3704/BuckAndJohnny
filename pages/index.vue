@@ -13,7 +13,7 @@ useSeoMeta({
   description:
     "Buck and Johnny's in Breaux Bridge, Louisiana provides zydeco and cajun dancing, great food, and live music",
   ogDescription: "A dank Page",
-  ogImage: "/logo.png",
+  ogImage: "https://www.buckandjohnnys.com/bucknj.webp",
   ogSiteName: "Buck and Johnnys",
 });
 </script>

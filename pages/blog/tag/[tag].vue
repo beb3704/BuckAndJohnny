@@ -15,7 +15,7 @@ useSeoMeta({
   ogTitle: "Blogs",
   description: "All Blogs",
   ogDescription: "All Blogs",
-  ogImage: "/logo.png",
+  ogImage: "https://www.buckandjohnnys.com/bucknj.webp",
   ogSiteName: "Buck & Johnnys Restaurant",
 });
 const appConfig = useAppConfig();
