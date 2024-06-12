@@ -1242,7 +1242,6 @@
   </div>
 </template>
 
-
 <style scoped>
 .cls-1 {
   fill: #fff;
