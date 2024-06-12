@@ -87,18 +87,19 @@
       <div
         class="flex m-auto py-3 p-2 col-span-full grid lg:grid-cols-3 md:grid-cols-2 m-auto max-w-6xl"
       >
-        <a href="/LightMenu.pdf"><div class="MenuButtons">Light menu</div></a>
-        <a href="/DessertMenu.pdf"
+        <a href="/FullMenu2.pdf"><div class="MenuButtons">Full menu</div></a>
+        <a href="/LightMenu2.pdf"><div class="MenuButtons">Light menu</div></a>
+        <a href="/DessertMenu2.pdf"
           ><div class="MenuButtons">Dessert Menu</div></a
         >
-        <a href="/ZydecoMenu.pdf"
+        <a href="/ZydecoMenu2.pdf"
           ><div class="MenuButtons">Zydeco Breakfast</div></a
         >
-        <a href="/TogoMenu.pdf"><div class="MenuButtons">To-Go menu</div></a>
+        <a href="/TogoMenu2.pdf"><div class="MenuButtons">To-Go menu</div></a>
 
-        <a href="/HolidayMenu.pdf"
+        <!--       <a href="/HolidayMenu.pdf"
           ><div class="MenuButtons Holiday">Holiday Menu : Avail Nov. 1</div></a
-        >
+        > -->
       </div>
 
       <h4 class="text-[#fff] uppercase text-center text-3xl font-bold py-4">
@@ -131,7 +132,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Praline chicken</div>
-        <div class="text-lightRed font-bold ml-auto">9.99</div>
+        <div class="text-lightRed font-bold ml-auto">10.39</div>
         <div class="col-span-full">
           boneless chicken fried golden brown and hand tossed in our famous
           praline sauce. Served with ranch dressing
@@ -154,7 +155,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Garlic Bites</div>
-        <div class="text-lightRed font-bold ml-auto">7.99</div>
+        <div class="text-lightRed font-bold ml-auto">9.47</div>
         <div class="col-span-full">
           bite size garlic bread served with marinara
         </div>
@@ -164,7 +165,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Spinach & Artichoke dip</div>
-        <div class="text-lightRed font-bold ml-auto">11.99</div>
+        <div class="text-lightRed font-bold ml-auto">12.47</div>
         <div class="col-span-full">
           topped with cheddar cheese served with homemade tortilla chips
         </div>
@@ -186,7 +187,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Eggplant Fries</div>
-        <div class="text-lightRed font-bold ml-auto">9.99</div>
+        <div class="text-lightRed font-bold ml-auto">10.39</div>
         <div class="col-span-full">
           sliced eggplant - fried golden brown - served with marinara & topped
           with parmesan
@@ -197,9 +198,9 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Quesadilla</div>
-        <div class="text-lightRed font-bold ml-auto">13.99</div>
+        <div class="text-lightRed font-bold ml-auto">15.59</div>
         <div class="col-span-full">
-          classic stylequesadilla with Chicken or Shrimp (+2.00)
+          classic style quesadilla with Chicken or Shrimp (18.67)
         </div>
       </div>
 
@@ -207,7 +208,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Bread and Oil</div>
-        <div class="text-lightRed font-bold ml-auto">7.99</div>
+        <div class="text-lightRed font-bold ml-auto">8.31</div>
         <div class="col-span-full">
           baked ciabatta - sliced and served with olive oil & spices
         </div>
@@ -217,7 +218,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Swamp Sticks</div>
-        <div class="text-lightRed font-bold ml-auto">8.99</div>
+        <div class="text-lightRed font-bold ml-auto">9.35</div>
         <div class="col-span-full">
           garlic cheese sticks - served with ranch or marinara
         </div>
@@ -227,7 +228,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Caprese</div>
-        <div class="text-lightRed font-bold ml-auto">10.99</div>
+        <div class="text-lightRed font-bold ml-auto">11.43</div>
         <div class="col-span-full">
           vine-ripened tomato - fresh mozzarella - basil - olive oil balsamic
           reduction
@@ -238,7 +239,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Stuffed Fried Mushroom</div>
-        <div class="text-lightRed font-bold ml-auto">12.99</div>
+        <div class="text-lightRed font-bold ml-auto">14.55</div>
         <div class="col-span-full">
           mushrooms stuffed with seafood stuffing served with ranch
         </div>
@@ -257,7 +258,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Cajun Fried Fish Bites</div>
-        <div class="text-lightRed font-bold ml-auto">11.99</div>
+        <div class="text-lightRed font-bold ml-auto">12.47</div>
         <div class="col-span-full">served with tartar sauce</div>
         <div class="absolute top-7 left-3 md:-left-1">
           <svg
@@ -277,7 +278,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Johnny's Drunken Shrimp</div>
-        <div class="text-lightRed font-bold ml-auto">11.99</div>
+        <div class="text-lightRed font-bold ml-auto">12.47</div>
         <div class="col-span-full">
           half dozen fresh gulf shrimp fried golden brown and tossed in our
           famous praline sauce
@@ -288,7 +289,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Cup of Crawfish Etouffee</div>
-        <div class="text-lightRed font-bold ml-auto">10.99</div>
+        <div class="text-lightRed font-bold ml-auto">11.43</div>
         <div class="col-span-full">
           crawfish smothered in rich creamy étouffée sauce - served with white
           rice
@@ -299,7 +300,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Appetizer Sampler</div>
-        <div class="text-lightRed font-bold ml-auto">24.99</div>
+        <div class="text-lightRed font-bold ml-auto">26.99</div>
         <div class="col-span-full">
           catfish bites - stuffed mushrooms - drunken shrimp - praline chicken -
           hot wings - served with ranch
@@ -318,7 +319,7 @@
         <div class="uppercase font-bold">Zydeco Gumbo</div>
 
         <div class="col-span-full">
-          <span class="text-lightRed font-bold">Cup 9.99 | Bowl 13.49</span
+          <span class="text-lightRed font-bold">Cup 10.39 | Bowl 14.03</span
           ><br />Chef Tony’s award-winning chicken & sausage gumbo served with
           white rice. Make it a bowl and we’ll add a side of potato salad!
         </div>
@@ -342,7 +343,7 @@
         <div class="uppercase font-bold">Seafood Gumbo</div>
 
         <div class="col-span-full">
-          <span class="text-lightRed font-bold">Cup 10.99 | Bowl 14.49</span
+          <span class="text-lightRed font-bold">Cup 11.43 | Bowl 15.07</span
           ><br />
           crab, shrimp & crawfish - served with white rice. Make it a bowl and
           we’ll add a side of potato salad!
@@ -355,7 +356,7 @@
         <div class="uppercase font-bold">Crab Portabella Brie</div>
 
         <div class="col-span-full">
-          <span class="text-lightRed font-bold">Cup 10.99 | Bowl 14.49</span
+          <span class="text-lightRed font-bold">Cup 11.43 | Bowl 15.07</span
           ><br />rich & creamy fan-favorite
         </div>
         <div class="absolute top-7 left-3 md:-left-1">
@@ -382,7 +383,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Caesar Salad</div>
-        <div class="text-lightRed font-bold ml-auto">10.99</div>
+        <div class="text-lightRed font-bold ml-auto">11.43</div>
         <div class="col-span-full">
           romaine - croutons - tomato - parmesan - garlic caesar dressing
           <br />chicken $5.49 | shrimp $6.49 | tuna $11.99
@@ -392,18 +393,18 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Spinach Salad</div>
-        <div class="text-lightRed font-bold ml-auto">13.99</div>
+        <div class="text-lightRed font-bold ml-auto">14.55</div>
         <div class="col-span-full">
           spinach - mushroom - red onion - feta - candied walnuts - tossed in
           cane syrup vinaigrette<br />
-          chicken $5.49 | shrimp $6.49 | tuna $11.99
+          chicken $5.71 | shrimp $6.75 | tuna $11.99
         </div>
       </div>
       <div
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Protein Cajun Cobb</div>
-        <div class="text-lightRed font-bold ml-auto">19.99</div>
+        <div class="text-lightRed font-bold ml-auto">21.79</div>
         <div class="col-span-full">
           spring mix - spinach | fried, blackened or grilled | shrimp - chicken
           - crawfish (seasonal) - tomato - avocado - applewood bacon - egg-
@@ -426,7 +427,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Grilled Tuna Salad</div>
-        <div class="text-lightRed font-bold ml-auto">21.49</div>
+        <div class="text-lightRed font-bold ml-auto">22.35</div>
         <div class="col-span-full">
           tomato - mushroom - black olives - parmesan - sesame vinaigrette
           cooked to order
@@ -461,7 +462,7 @@
         <div class="col-span-full">
           ranch - honey mustard - caesar - cane syrup vinaigrette - thousand
           island - bleu cheese - italian - balsamic vinaigrette - sesame
-          vinaigrette
+          vinaigrette - French
         </div>
       </div>
 
@@ -475,7 +476,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Club Sandwich</div>
-        <div class="text-lightRed font-bold ml-auto">13.49</div>
+        <div class="text-lightRed font-bold ml-auto">15.59</div>
         <div class="col-span-full">
           ham, turkey, bacon, lettuce, tomatoes and mayonnaise stacked high
           between texas toast
@@ -485,9 +486,9 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Praline Wrap</div>
-        <div class="text-lightRed font-bold ml-auto">15.99</div>
+        <div class="text-lightRed font-bold ml-auto">16.63</div>
         <div class="col-span-full">
-          Chicken or Shrimp (+2.00). fried or grilled | spinach, mushroom, red
+          Chicken or Shrimp (18.71). fried or grilled | spinach, mushroom, red
           onion, feta, candied walnuts, cane syrup vinaigrette, tomato basil
           wrap
         </div>
@@ -495,8 +496,8 @@
       <div
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
-        <div class="uppercase font-bold">B&J Burger</div>
-        <div class="text-lightRed font-bold ml-auto">13.99</div>
+        <div class="uppercase font-bold">B&J CheeseBurger</div>
+        <div class="text-lightRed font-bold ml-auto">14.55</div>
         <div class="col-span-full">
           homemade hamburger patty topped with grilled onions, mushrooms,
           cheddar served on a jalapeño bun with lettuce, tomatoes, mayonnaise, &
@@ -507,9 +508,9 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Caesar Wrap</div>
-        <div class="text-lightRed font-bold ml-auto">15.99</div>
+        <div class="text-lightRed font-bold ml-auto">16.63</div>
         <div class="col-span-full">
-          Chicken or Shrimp (+2.00). fried, blackened or grilled <br />romaine,
+          Chicken or Shrimp (18.71). fried, blackened or grilled <br />romaine,
           croutons, tomato, parmesan, garlic caesar dressing, tomato basil wrap
         </div>
       </div>
@@ -529,7 +530,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Cajun Fish Platter</div>
-        <div class="text-lightRed font-bold ml-auto">17.99</div>
+        <div class="text-lightRed font-bold ml-auto">18.71</div>
         <div class="col-span-full">fried | grilled | blackened</div>
         <div class="absolute top-7 left-3 md:-left-1">
           <svg
@@ -548,14 +549,14 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Shrimp Platter</div>
-        <div class="text-lightRed font-bold ml-auto">18.99</div>
+        <div class="text-lightRed font-bold ml-auto">19.75</div>
         <div class="col-span-full">fried | grilled | blackened</div>
       </div>
       <div
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Hamburger Steak</div>
-        <div class="text-lightRed font-bold ml-auto">16.99</div>
+        <div class="text-lightRed font-bold ml-auto">17.67</div>
         <div class="col-span-full">
           Homemade Hamburger Steak topped with grilled onions, mushrooms, brown
           gravy <br />add pepperjack cheese for .99
@@ -565,7 +566,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Blackened Tilapia</div>
-        <div class="text-lightRed font-bold ml-auto">22.99</div>
+        <div class="text-lightRed font-bold ml-auto">23.91</div>
         <div class="col-span-full">
           blackened tilapia fillet topped with grilled shrimp & basil cream
           sauce
@@ -594,7 +595,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Coatney's Crabcakes</div>
-        <div class="text-lightRed font-bold ml-auto">22.99</div>
+        <div class="text-lightRed font-bold ml-auto">25.00</div>
         <div class="col-span-full">
           two baked crab cakes topped with crab portabella brie
         </div>
@@ -603,7 +604,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Pork Ribeye</div>
-        <div class="text-lightRed font-bold ml-auto">19.99</div>
+        <div class="text-lightRed font-bold ml-auto">20.79</div>
         <div class="col-span-full">grilled to perfection</div>
       </div>
 
@@ -611,7 +612,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Stuffed Fish Savoy</div>
-        <div class="text-lightRed font-bold ml-auto">23.99</div>
+        <div class="text-lightRed font-bold ml-auto">30.15</div>
         <div class="col-span-full">
           grilled fish fillet - stuffed with crab - topped with crab portabella
           brie
@@ -628,7 +629,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Blackened Tacos</div>
-        <div class="text-lightRed font-bold ml-auto">18.99</div>
+        <div class="text-lightRed font-bold ml-auto">19.75</div>
         <div class="col-span-full">
           Choose fish or shrimp. topped with spicy ranch - avocado - angel hair
           cabbage - cilantro<br />Served with choice of fries
@@ -639,7 +640,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Craw-fish Breaux Bridge</div>
-        <div class="text-lightRed font-bold ml-auto">23.49</div>
+        <div class="text-lightRed font-bold ml-auto">25.43</div>
         <div class="col-span-full">
           golden fried fish filet topped with crawfish étouffée served over
           white rice
@@ -661,7 +662,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Crawfish Etouffee</div>
-        <div class="text-lightRed font-bold ml-auto">19.99</div>
+        <div class="text-lightRed font-bold ml-auto">22.43</div>
         <div class="col-span-full">served with potato salad & bread roll</div>
       </div>
       <div
@@ -670,15 +671,15 @@
         <div class="uppercase font-bold">Sides</div>
         <div class="text-lightRed font-bold ml-auto"></div>
         <div class="col-span-full">
-          Loaded Mashed Potatoes &nbsp;2.99<br />
-          Sweet Potato Fries &nbsp;2.99<br />
-          Roasted Potatoes &nbsp;1.99<br />
-          Potato Salad &nbsp;1 .99 <br />
-          Bread Roll &nbsp; .99 <br />
-          Grilled Veggies &nbsp;1.99<br />
-          French Fries &nbsp;2.99<br />
-          House/Caesar Salad &nbsp;3.49<br />
-          Spinach Salad &nbsp;4.49<br />
+          Loaded Mashed Potatoes &nbsp;3.11<br />
+          Sweet Potato Fries &nbsp;4.15<br />
+          Roasted Potatoes &nbsp;2.07<br />
+          Potato Salad &nbsp;3.11<br />
+          Bread Roll &nbsp;1.03<br />
+          Grilled Veggies &nbsp;2.07<br />
+          French Fries &nbsp;3.11<br />
+          House Salad &nbsp;3.64<br />
+          Caesar Salad &nbsp;5.19<br />
         </div>
       </div>
 
@@ -699,9 +700,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">6.49</div>
-        <div class="text-lightRed text-center">10.49</div>
-        <div class="text-lightRed text-center">14.99</div>
+        <div class="text-lightRed text-center">6.75</div>
+        <div class="text-lightRed text-center">10.91</div>
+        <div class="text-lightRed text-center">15.59</div>
         <p class="col-span-full text-[#929497] text-center">
           pesto, bbq sauce, roasted garlic sauce
         </p>
@@ -714,9 +715,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">.99</div>
-        <div class="text-lightRed text-center">1.99</div>
-        <div class="text-lightRed text-center">3.49</div>
+        <div class="text-lightRed text-center">1.03</div>
+        <div class="text-lightRed text-center">2.07</div>
+        <div class="text-lightRed text-center">3.63</div>
         <p class="col-span-full text-[#929497] text-center">
           extra cheese – parmesan – cheddar – feta – pepper jack – artichoke –
           tomato – jalapeńo – red onion – yellow onion – banana pepper – green
@@ -733,9 +734,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">2.99</div>
-        <div class="text-lightRed text-center">4.49</div>
-        <div class="text-lightRed text-center">6.49</div>
+        <div class="text-lightRed text-center">3.11</div>
+        <div class="text-lightRed text-center">4.67</div>
+        <div class="text-lightRed text-center">6.75</div>
         <p class="col-span-full text-[#929497] text-center">
           roasted garlic – caramelized onion – sun-dried tomato – fresh basil –
           fresh mozzarella – grilled chicken – tasso – smoked pork sausage –
@@ -756,9 +757,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">8.49</div>
-        <div class="text-lightRed text-center">12.49</div>
-        <div class="text-lightRed text-center">19.49</div>
+        <div class="text-lightRed text-center">8.83</div>
+        <div class="text-lightRed text-center">12.99</div>
+        <div class="text-lightRed text-center">20.27</div>
         <p class="col-span-full text-[#929497] text-center">
           roasted garlic – mozzarella -roma tomato – fresh basil – balsamic
           reduction
@@ -772,9 +773,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">9.49</div>
-        <div class="text-lightRed text-center">14.49</div>
-        <div class="text-lightRed text-center">21.49</div>
+        <div class="text-lightRed text-center">9.87</div>
+        <div class="text-lightRed text-center">15.07</div>
+        <div class="text-lightRed text-center">22.35</div>
         <p class="col-span-full text-[#929497] text-center">
           roasted garlic – mozzarella – spinach – mushroom – sun-dried tomato
         </p>
@@ -787,9 +788,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">9.49</div>
-        <div class="text-lightRed text-center">14.49</div>
-        <div class="text-lightRed text-center">21.49</div>
+        <div class="text-lightRed text-center">9.87</div>
+        <div class="text-lightRed text-center">15.07</div>
+        <div class="text-lightRed text-center">22.35</div>
         <p class="col-span-full text-[#929497] text-center">
           pesto – mozzarella – feta – artichoke – spinach – mushroom – green &
           red onion
@@ -803,9 +804,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">10.49</div>
-        <div class="text-lightRed text-center">15.49</div>
-        <div class="text-lightRed text-center">21.49</div>
+        <div class="text-lightRed text-center">10.91</div>
+        <div class="text-lightRed text-center">16.11</div>
+        <div class="text-lightRed text-center">22.35</div>
         <p class="col-span-full text-[#929497] text-center">
           bbq sauce – mozzarella – grilled chicken – red onion
         </p>
@@ -818,9 +819,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">12.49</div>
-        <div class="text-lightRed text-center">17.49</div>
-        <div class="text-lightRed text-center">24.99</div>
+        <div class="text-lightRed text-center">12.99</div>
+        <div class="text-lightRed text-center">18.19</div>
+        <div class="text-lightRed text-center">25.99</div>
         <p class="col-span-full text-[#929497] text-center">
           red sauce – pepper jack – shrimp – tasso – smoked chaurice – bell
           pepper – tomato
@@ -834,9 +835,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">12.49</div>
-        <div class="text-lightRed text-center">17.49</div>
-        <div class="text-lightRed text-center">24.99</div>
+        <div class="text-lightRed text-center">12.99</div>
+        <div class="text-lightRed text-center">18.19</div>
+        <div class="text-lightRed text-center">25.99</div>
         <p class="col-span-full text-[#929497] text-center">
           roasted garlic – mozzarella – parmesan – prime rib – mushroom –
           caramelized onion
@@ -850,9 +851,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">12.49</div>
-        <div class="text-lightRed text-center">17.49</div>
-        <div class="text-lightRed text-center">24.99</div>
+        <div class="text-lightRed text-center">12.99</div>
+        <div class="text-lightRed text-center">18.19</div>
+        <div class="text-lightRed text-center">25.99</div>
         <p class="col-span-full text-[#929497] text-center">
           red sauce – mozzarella – beef – pork sausage – italian sausage –
           applewood bacon – smoked chaurice
@@ -866,9 +867,9 @@
         <div class="text-[#929497] text-center">6"</div>
         <div class="text-[#929497] text-center">10"</div>
         <div class="text-[#929497] text-center">14"</div>
-        <div class="text-lightRed text-center">12.49</div>
-        <div class="text-lightRed text-center">17.49</div>
-        <div class="text-lightRed text-center">24.99</div>
+        <div class="text-lightRed text-center">12.99</div>
+        <div class="text-lightRed text-center">18.19</div>
+        <div class="text-lightRed text-center">25.99</div>
         <p class="col-span-full text-[#929497] text-center">
           red sauce – cheddar – alligator sausage – tasso – shrimp – crawfish
           (seasonal) – jalapeńo – yellow onion
@@ -884,7 +885,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Pasta Breaux Bridge</div>
-        <div class="text-lightRed font-bold ml-auto">23.99</div>
+        <div class="text-lightRed font-bold ml-auto">24.95</div>
         <div class="col-span-full">
           chicken – tasso – cream sauce – served over penne
         </div>
@@ -905,7 +906,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Chicken Atchafalaya</div>
-        <div class="text-lightRed font-bold ml-auto">18.49</div>
+        <div class="text-lightRed font-bold ml-auto">19.23</div>
         <div class="col-span-full">
           fried | grilled | blackened boneless chicken topped with pepper jack
           grilled onions - sautéed in a cream sauce - mushrooms - tasso - diced
@@ -929,7 +930,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Spaghetti with Meat Sauce</div>
-        <div class="text-lightRed font-bold ml-auto">13.99</div>
+        <div class="text-lightRed font-bold ml-auto">14.55</div>
         <div class="col-span-full">
           smothered Italian meat sauce served with angel hair noodles add
           <br />Italian sausage 3.00 <br />
@@ -942,7 +943,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Alfredo Over Fettucine</div>
-        <div class="text-lightRed font-bold ml-auto">13.99</div>
+        <div class="text-lightRed font-bold ml-auto">14.55</div>
         <div class="col-span-full">
           Add Chicken 4.49 | Add Shrimp 5.49<br />
           rich creamy alfredo sauce served over fettucini
@@ -953,7 +954,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Pasta Cecilia</div>
-        <div class="text-lightRed font-bold ml-auto">24.49</div>
+        <div class="text-lightRed font-bold ml-auto">25.47</div>
         <div class="col-span-full">
           shrimp - crabmeat - crawfish (seasonal) - spinach - mushroom -
           sun-dried tomato - served with a sherry cream sauce over penne
@@ -963,7 +964,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Spicy Scampi</div>
-        <div class="text-lightRed font-bold ml-auto">23.99</div>
+        <div class="text-lightRed font-bold ml-auto">24.95</div>
         <div class="col-span-full">
           bacon garlic butter - shrimp - tasso - smoked chaurice jalapeño -
           served over penne
@@ -973,7 +974,7 @@
         class="grid grid-cols-[1fr,min-content] py-6 md:px-4 px-8 content-start"
       >
         <div class="uppercase font-bold">Seafood Pasta</div>
-        <div class="text-lightRed font-bold ml-auto">24.99</div>
+        <div class="text-lightRed font-bold ml-auto">25.99</div>
         <div class="col-span-full">
           shrimp - crab - crawfish (seasonal) - tossed in a spicy cream sauce
           served over penne
