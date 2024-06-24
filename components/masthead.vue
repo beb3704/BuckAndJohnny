@@ -203,7 +203,7 @@
           </div>
         </div>
       </Imagebox>
-<!-- 
+      <!-- 
       <Imagebox
         url="/ordernow.jpg"
         title="Order Now"
@@ -291,7 +291,7 @@
         </div>
       </Imagebox>
 
-<!--       <Imagebox
+      <!--       <Imagebox
         url="/merch.jpg"
         title="Merchandise"
         alt="People Dancing"
