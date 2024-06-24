@@ -203,7 +203,7 @@
           </div>
         </div>
       </Imagebox>
-
+<!-- 
       <Imagebox
         url="/ordernow.jpg"
         title="Order Now"
@@ -256,7 +256,7 @@
             </NuxtLink>
           </div>
         </div>
-      </Imagebox>
+      </Imagebox> -->
 
       <Imagebox
         url="/bookevent.jpg"
@@ -291,7 +291,7 @@
         </div>
       </Imagebox>
 
-      <Imagebox
+<!--       <Imagebox
         url="/merch.jpg"
         title="Merchandise"
         alt="People Dancing"
@@ -322,7 +322,7 @@
             </NuxtLink>
           </div>
         </div>
-      </Imagebox>
+      </Imagebox> -->
     </div>
   </div>
 </template>
