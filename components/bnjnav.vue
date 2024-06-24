@@ -36,16 +36,6 @@
             Menu
           </NuxtLink>
         </div>
-
-        <div>
-          <div class="clip-left bg-darkRed"></div>
-          <NuxtLink
-            to="https://buckandjohnnys.hrpos.heartland.us/menu"
-            class="uppercase font-bold text-[#fff] bg-darkRed p-1 block text-center px-3"
-          >
-            Order Now
-          </NuxtLink>
-        </div>
       </div>
 
       <div class="hidden lg:flex justify-start items-center text-sm">
@@ -63,16 +53,6 @@
             class="p-1 uppercase text-[#fff] font-bold block text-center text-sm tracking-widest"
           >
             Menu
-          </NuxtLink>
-        </div>
-
-        <div class="px-3 bg-darkRed flex justify-center items-center">
-          <div class="clip-left bg-darkRed"></div>
-          <NuxtLink
-            to="https://buckandjohnnys.hrpos.heartland.us/menu"
-            class="uppercase font-bold text-[#fff] p-1 block text-center text-sm tracking-widest"
-          >
-            Order Now
           </NuxtLink>
         </div>
       </div>
