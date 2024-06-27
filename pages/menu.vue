@@ -3,7 +3,7 @@
     <Bnjnav></Bnjnav>
     <SubHeader title="menu" sub-title="delicious choices for every meal">
       <div
-        class="text-textLight grid grid-cols-2 p-2 gap-10 m-auto"
+        class="text-textLight grid grid-cols-1 p-2 gap-10 m-auto"
         style="width: 375px"
       >
         <div class="bg-lightRed py-1">
@@ -35,7 +35,7 @@
           </NuxtLink>
         </div>
 
-        <div class="bg-darkRed py-1">
+        <!--  <div class="bg-darkRed py-1">
           <div class="clip-left bg-darkRed"></div>
           <NuxtLink
             to="/"
@@ -79,7 +79,7 @@
 
             <div class="uppercase">ORDER ONLINE</div>
           </NuxtLink>
-        </div>
+        </div>-->
       </div>
     </SubHeader>
 
